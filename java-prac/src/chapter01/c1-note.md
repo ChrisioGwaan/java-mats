@@ -82,7 +82,7 @@ No `String` there right? Remember a sentence: **In programming, a String is made
 
 > Initialisation (in details)
 
-Looking at the following code snippet:
+Look at the following code snippet:
 ```
 int min; // Declare an integer variable without initialising
 int max = 0; // Set a default integer value to 0
@@ -147,4 +147,11 @@ import java.lang.Math;
 * `Math.pow()`
 * `Math.abs()`, absolute value
 * `Math.PI`, the value of π
+
+## Reminder
+
+**Forget about the good practice things while you're doing challenges.**
+**Try to understand the questions.**
+**Come up with a quick solution and try that out even if it is wrong.**
+**Keep debugging, practicing.**
 
