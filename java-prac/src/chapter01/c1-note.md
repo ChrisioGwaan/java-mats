@@ -150,8 +150,8 @@ import java.lang.Math;
 
 ## Reminder
 
-**Forget about the good practice things while you're doing challenges.**
-**Try to understand the questions.**
-**Come up with a quick solution and try that out even if it is wrong.**
+**Forget about the good practice things while you're doing challenges.** \
+**Try to understand the questions.** \
+**Come up with a quick solution and try that out even if it is wrong.** \
 **Keep debugging, practicing.**
 
