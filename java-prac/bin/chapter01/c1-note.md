@@ -1,7 +1,6 @@
-
-
-
 # Chapter 1 - Basic I
+
+Extract some important notes and append additional concepts here, hope it could be useful.
 
 * [Output](#1-Output)
 * [Declaration & Memory Allocation](#2-DMA)
@@ -115,6 +114,14 @@ Scanner scnr = new Scanner(System.in);
 
 The `scnr` represents as an **instance** of the `Scanner` class.
 
+> Methods
+
+* `scnr.nextInt()`, integer input
+* `scnr.nextDouble()`, double input
+* `scnr.next()`, string input but in the same line
+* `scnr.nextLine()`, string input for the whole line
+* `scnr.next().charAt(0)`, char input
+
 > ***GOOD PRACTICE***
 
 ```
@@ -124,4 +131,20 @@ scnr.close();
 **To release system resources as soon as you're finished with them to ensure efficient resource utilization and prevent any potential issues.**
 
 <h2 id="4-Maths">Maths</h2>
+
+> Import the library first
+
+```
+import java.lang.Math;
+```
+
+> Commonly Used Methods
+
+* `Math.sqrt()`
+* `Math.sin()`
+* `Math.cos()`
+* `Math.tan()`
+* `Math.pow()`
+* `Math.abs()`, absolute value
+* `Math.PI`, the value of π
 
