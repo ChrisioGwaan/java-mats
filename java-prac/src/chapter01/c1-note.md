@@ -6,6 +6,7 @@ Extract some important notes and append additional concepts here, hope it could 
 * [Declaration & Memory Allocation](#2-DMA)
 * [Input](#3-Input)
 * [Maths](#4-Maths)
+* [Reminder](#5-Reminder)
 
 <h2 id="1-Output">Output</h2>
 
@@ -148,7 +149,7 @@ import java.lang.Math;
 * `Math.abs()`, absolute value
 * `Math.PI`, the value of π
 
-## Reminder
+<h2 id="5-Reminder">Reminder</h2>
 
 **Forget about the good practice things while you're doing challenges.** \
 **Try to understand the questions.** \
