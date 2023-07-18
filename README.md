@@ -2,6 +2,13 @@
 
 `Under Construction...`
 
+```
+--- java-prac
+   |
+   |
+   | ---> src, the materials are under this fodler.
+```
+
 > Chapter 1 - Basic I: Variables, assignments, maths, I/O (Input/Output)
 
 > Chapter 2 - Basic II: String, boolean, double & float
