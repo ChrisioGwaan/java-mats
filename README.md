@@ -1,6 +1,6 @@
 # Java Learning Materials 
 
-`Under Construction...`
+`$ Project Status: 10%...`
 
 ```
 --- java-prac
