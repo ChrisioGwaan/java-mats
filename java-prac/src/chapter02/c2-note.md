@@ -79,7 +79,7 @@ String word = "Hello";
 
 <h2 id="2-String">String (In details)</h2>
 
-> IMP NOTE
+> :rotating_light: IMP NOTE
 
 Review the animation on 2.12.7 `Mixing next() and nextLine()`.
 
