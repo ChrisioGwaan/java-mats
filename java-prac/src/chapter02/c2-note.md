@@ -1,11 +1,14 @@
 # Chapter 2 - Basic II
 
-* [Char](#1-Char)
-* [String](#2-String)
-* [:gem: String & Char](#3-string-char)
-* [Reminder](#4-Reminder)
+:gem:
 
-<h2 id="1-Char">Char</h2>
+* I. [char](#1-Char)
+* II. [String](#2-String)
+* III. [charAt()](#3-string-char)
+* IV. [float & double](#4-float-double)
+* V. [Reminder](#5-Reminder)
+
+<h2 id="1-Char">I. Char</h2>
 
 > Input (In details)
 
@@ -77,7 +80,7 @@ String word = "Hello";
 // Similar right
 ```
 
-<h2 id="2-String">String (In details)</h2>
+<h2 id="2-String">II. String (In details)</h2>
 
 > :rotating_light: IMP NOTE
 
@@ -111,7 +114,7 @@ Item name:
 :heavy_exclamation_mark: This is a Scanner bug.
 
 ```
-                nextLine() read only \n
+                nextLine() reads only \n
                    |
                    V
 --------------------------------------
@@ -131,14 +134,58 @@ System.out.println("Year: " + year);
 System.out.println("Item name: " + itemName);
 ```
 
-<h2 id="3-string-char">String & Character</h2>
+> Methods - `indexOf()`
+
+:question: Explain
+
+`indexOf(ch, index)` - `ch` is the target to be searched. `index` is an **optional** parameter, and indicates where in the string to start looking.
+
+:bookmark_tabs: Check out the following code snippet
+
+```
+String flower = "poppy";
+int index1 = flower.indexOf('p'); // 0
+int index2 = flower.indexOf('p', 1); // 2, because it starts to search from index 1 
+```
+
+```
+String quote = "Pleasant words are like a honeycomb";
+int index1 = quote.indexOf('e'); // 2
+int index2 = quote.indexOf('e', 17); // 2, because it starts to search from index 5 
+```
+
+> Methods - `substring()`
+
+:question: Explain
+
+`substring(beginIndex, endIndex)` - `endIndex` is not included, and it is an **optional** parameter.
+
+:bookmark_tabs: Check out the following code snippet
+
+```
+String quote = "Sweetness to the soul and health to the bones";
+
+String quote_split1 = quote.substring(26); // health to the bones
+String quote_split2 = quote.substring(0, 8); // Sweetness, the index 8 element is not included
+```
+
+<h2 id="3-string-char">III. charAt()</h2>
 
 > Well, `charAt()` again~~~
 
-```
+:bookmark_tabs: Check out the following code snippet
 
 ```
+String city = "Melbourne";
+char firstLetter = city.charAt(0); // Store first element of city
+char fifthLetter = city.charAt(4); // Store fifth element of city
+```
 
-<h2 id="4-Reminder">Reminder</h2>
+<h2 id="4-float-double">IV. float & double</h2>
 
-**Remember, ask questions if you may have, or give me feedback on this, OR feel free to commit your changes at any time (Collaborator privilege)!**
+
+
+
+<h2 id="5-Reminder">V. Reminder</h2>
+
+****
