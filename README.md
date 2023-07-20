@@ -11,9 +11,9 @@
 
 > Chapter 1 - Basic I: Variables, assignments, maths, I/O (Input/Output)
 
-> Chapter 2 - Basic II: String, boolean, double & float
+> Chapter 2 - Basic II: String, double & float
 
-> Chapter 3 - Basic III: Logics & conditions, if-else, switch
+> Chapter 3 - Basic III: Logics & conditions, boolean, if-else, switch
 
 > Chapter 4 - Basic IV: For loop, while loop, enumerations
 
