@@ -2,7 +2,8 @@
 
 * [Char](#1-Char)
 * [String](#2-String)
-* [Reminder](#3-Reminder)
+* [:gem: String & Char](#3-string-char)
+* [Reminder](#4-Reminder)
 
 <h2 id="1-Char">Char</h2>
 
@@ -76,10 +77,68 @@ String word = "Hello";
 // Similar right
 ```
 
-<h2 id="2-String">String</h2>
+<h2 id="2-String">String (In details)</h2>
 
-> 
+> IMP NOTE
 
-<h2 id="3-Reminder">Reminder</h2>
+Review the animation on 2.12.7 `Mixing next() and nextLine()`.
+
+:bookmark_tabs: Check out the following code snippet
+
+```
+...
+int year = scnr.nextInt();
+String itemName = scnr.nextLine();
+
+System.out.println("Year: " + year);
+System.out.println("Item name: " + itemName);
+```
+
+:arrow_right: Input:
+
+```
+2023
+Cola
+```
+
+:arrow_left: Output:
+
+```
+Year: 2023
+Item name: 
+```
+
+:heavy_exclamation_mark: This is a Scanner bug.
+
+```
+                nextLine() read only \n
+                   |
+                   V
+--------------------------------------
+| 2 | 0 | 2 | 3 | \n | C | o | l | a |
+--------------------------------------
+```
+
+:white_check_mark: Solution:
+
+```
+...
+int year = scnr.nextInt();
+scnr.nextLine(); // read the newline
+String itemName = scnr.nextLine();
+
+System.out.println("Year: " + year);
+System.out.println("Item name: " + itemName);
+```
+
+<h2 id="3-string-char">String & Character</h2>
+
+> Well, `charAt()` again~~~
+
+```
+
+```
+
+<h2 id="4-Reminder">Reminder</h2>
 
 **Remember, ask questions if you may have, or give me feedback on this, OR feel free to commit your changes at any time (Collaborator privilege)!**
