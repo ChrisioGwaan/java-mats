@@ -1,6 +1,6 @@
 # Java Learning Materials 
 
-`$ Project Status: 10%...`
+`$ Project Status: 12.3333%...`
 
 ```
 --- java-prac
@@ -28,5 +28,7 @@
 > Chapter 9 - Intermediate II: Algorithm -> Searching
 
 > Chapter 10 - Intermediate III: Algorithm -> Sorting
+
+> Chapter Xpecial edition - float, ...
 
 > TBA, recursion, exception, ADT, ...
