@@ -5,7 +5,7 @@
 * I. [char](#1-Char)
 * II. [String](#2-String)
 * III. [charAt()](#3-string-char)
-* IV. [float & double](#4-float-double)
+* IV. [double](#4-double)
 * V. [Reminder](#5-Reminder)
 
 <h2 id="1-Char">I. Char</h2>
@@ -30,7 +30,7 @@ System.out.print("" + a + b + c);
 
 The code snippet above doesn't contain any syntax errors but logical one.
 
-**You might notice the `""` shows in front of the 3 characters, that's because Java will consider it as arithmetic, which means the program will show the sum of [ASCII](https://www.ascii-code.com/) number(DEC) of those 3 characters. Adding `""` at front can be considered as a String.**
+:bulb: **You might notice the `""` shows in front of the 3 characters, that's because Java will consider it as arithmetic, which means the program will show the sum of [ASCII](https://www.ascii-code.com/) number(DEC) of those 3 characters. Adding `""` at front can be considered as a String.**
 
 ***Case 1 - best case***
 
@@ -136,7 +136,7 @@ System.out.println("Item name: " + itemName);
 
 > Methods - `indexOf()`
 
-:question: Explain
+:bulb: Explain
 
 `indexOf(ch, index)` - `ch` is the target to be searched. `index` is an **optional** parameter, and indicates where in the string to start looking.
 
@@ -156,7 +156,7 @@ int index2 = quote.indexOf('e', 17); // 2, because it starts to search from inde
 
 > Methods - `substring()`
 
-:question: Explain
+:bulb: Explain
 
 `substring(beginIndex, endIndex)` - `endIndex` is not included, and it is an **optional** parameter.
 
@@ -181,10 +181,11 @@ char firstLetter = city.charAt(0); // Store first element of city
 char fifthLetter = city.charAt(4); // Store fifth element of city
 ```
 
-<h2 id="4-float-double">IV. float & double</h2>
+<h2 id="4-double">IV. double</h2>
 
+:mega: Previously I was thinking of adding `float` at this stage, but it looks like Zybook really forces beginner to start with using `double` as floating-point value. Thus, `float` will be on additional chapter (TBA after chapter 10).
 
-
+> crucial concepts from double NOT FOUND hehe, so give me quests :question: :star2: :smile: 
 
 <h2 id="5-Reminder">V. Reminder</h2>
 
