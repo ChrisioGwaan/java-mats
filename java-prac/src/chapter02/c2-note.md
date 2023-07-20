@@ -185,7 +185,7 @@ char fifthLetter = city.charAt(4); // Store fifth element of city
 
 :mega: Previously I was thinking of adding `float` at this stage, but it looks like Zybook really forces beginner to start with using `double` as floating-point value. Thus, `float` will be on additional chapter (TBA after chapter 10).
 
-> crucial concepts from double NOT FOUND hehe, so give me quests :question: :star2: :smile: 
+> crucial concepts from double NOT FOUND hehe, so give me quests :question: :star2: :smile: :pray: 
 
 <h2 id="5-Reminder">V. Reminder</h2>
 
