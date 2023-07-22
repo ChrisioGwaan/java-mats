@@ -6,7 +6,7 @@
 * II. [String](#2-String)
 * III. [charAt()](#3-string-char)
 * IV. [double](#4-double)
-* V. [Reminder](#5-Reminder)
+* V. [Q & A](#5-qa)
 
 <h2 id="1-Char">I. Char</h2>
 
@@ -187,6 +187,10 @@ char fifthLetter = city.charAt(4); // Store fifth element of city
 
 > crucial concepts from double NOT FOUND hehe, so give me quests :question: :star2: :smile: :pray: 
 
-<h2 id="5-Reminder">V. Reminder</h2>
+<h2 id="5-qa">V. Q & A</h2>
 
-****
+Q1: `Write your questions here`
+
+A1: `I will answer here` :smile:
+
+Add more if you may have
