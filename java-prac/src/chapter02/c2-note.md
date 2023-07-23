@@ -169,8 +169,6 @@ String quote_split1 = quote.substring(26); // health to the bones
 String quote_split2 = quote.substring(0, 8); // Sweetness, the index 8 element is not included
 ```
 
-**The `endindex` is optional, so if that is `quote.substring(26)`, suppose `quote` is a infinite length string, it starts from 26, and end at infinite.**
-
 Check [ASCII](https://www.ascii-code.com/) and look for 32-47 (DEC number), those are space and symbols.
 
 0-31: Non Printable Characters
@@ -196,8 +194,11 @@ char fifthLetter = city.charAt(4); // Store fifth element of city
 
 <h2 id="5-qa">V. Q & A</h2>
 
-Q1: `Write your questions here`
+Q1: `String quote_split1 = quote.substring(26);` what does the 26 represent? Confused with no `endIndex` there.
 
-A1: `I will answer here` :smile:
+A1: `26` means where it starts, and endindex is **optional**, so if that is quote.substring(26), suppose quote is a infinite length string, it starts from 26, and end at `infinite length -1`. You may wonder why it has to be minus 1, e.g `"hello".substring(2)`, `hello` has a length of 5 and the index of last letter `o` is `4`. Thus, that would be the `length - 1`.
 
+Q2: TBD
+
+A2: 
 Add more if you may have
