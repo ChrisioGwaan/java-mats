@@ -198,7 +198,7 @@ Q1: `String quote_split1 = quote.substring(26);` what does the 26 represent? Con
 
 A1: `26` means where it starts, and endindex is **optional**, so if that is quote.substring(26), suppose quote is a infinite length string, it starts from 26, and end at `infinite length -1`. You may wonder why it has to be minus 1, e.g `"hello".substring(2)`, `hello` has a length of 5 and the index of last letter `o` is `4`. Thus, that would be the `length - 1`.
 
-Q2: TBD
+Q2: ?
 
-A2: TBD
+A2: !
 Add more if you may have
