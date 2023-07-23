@@ -12,25 +12,23 @@
 
 > AND `&&`
 
-|   | T | F |
-|---|---|---|
-| T | T | F |
-| F | F | F |
+|     | T   | F   |
+| --- | --- | --- |
+| T   | T   | F   |
+| F   | F   | F   |
 
 > OR `||`
 
-|   | T | F |
-|---|---|---|
-| T | T | T |
-| F | T | F |
+|     | T   | F   |
+| --- | --- | --- |
+| T   | T   | T   |
+| F   | T   | F   |
 
-> Comparing integers or floating-point values or char
+> Relational Operators
 
 **(for integers or floating-point values, only comparing the values)**
 
 **(for char, only comparing their ASCII values)**
-
-
 
 * `>=`, greater than or equal to
 * `<=`, less than or equal to
@@ -66,3 +64,59 @@ String new_str1 = new String("Late Night Snacks");
 :bulb: How to use? Let's use the same code snippet provided on above
 
 `str1.equals(new_str1)` means that the actual contents of `str1` and `new_str1` are now comparing, which will return **true**.
+
+<h2 id="2-bool">II. Boolean</h2>
+
+> Data type
+
+:bulb: The result of a relational operator is one of two special values: `true` or `false`, which belongs to the data type `boolean`.
+
+> Declaration
+
+:bookmark_tabs: Check out the following code snippet
+
+```
+boolean isLegit = true;
+
+boolean result = 2 < 3; // false. You can also do this, because the result of a condition is a boolean data type.
+
+// Multiple conditions
+boolean result2 = (5 < 8 && 9 > 10 || 7 == 12); // EXAMPLE, it'll be false
+```
+
+<h2 id="3-elif">III. if-else</h2>
+
+> Syntax (In Good Practice)
+
+:bookmark_tabs: Check out the following code snippet
+
+```
+if (condition1) {
+    playMinecraft();
+} else if (condition2) {
+    haveLNS();
+} else {
+    goToSleep();
+}
+```
+
+`if-else` syntax in Java is pretty similar to other languages like C/C++, C# etc.
+
+> Common Logical Error
+
+> Common Maths practice
+
+```
+int p = 5;
+```
+
+If `p` is even, print out `5 is even`
+If `p` is odd, print out `5 is odd`
+
+Obviously, the code will only run the second line. But how could we do that using if-else?
+
+To determine whether a number is odd or even, we just need to check `5 % 2 == 0 ?`.
+
+
+
+
