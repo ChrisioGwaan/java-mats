@@ -169,6 +169,13 @@ String quote_split1 = quote.substring(26); // health to the bones
 String quote_split2 = quote.substring(0, 8); // Sweetness, the index 8 element is not included
 ```
 
+**The `endindex` is optional, so if that is `quote.substring(26)`, suppose `quote` is a infinite length string, it starts from 26, and end at infinite.**
+
+Check [ASCII](https://www.ascii-code.com/) and look for 32-47 (DEC number), those are space and symbols.
+
+0-31: Non Printable Characters
+32-127: Printable Characters
+
 <h2 id="3-string-char">III. charAt()</h2>
 
 > Well, `charAt()` again~~~
