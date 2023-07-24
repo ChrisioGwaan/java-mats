@@ -24,7 +24,7 @@ $$ax^{2} + bx + c = 0$$
 
 using the quadratic formula:
 
-$$x=\frac{-b \pm \sqrt{b^2-4ac}}{2}$$
+$$x=\frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
 
 Prompt the user to input integers for `a`, `b`, and `c`. Compute the two solutions for `x`, and display the results.
 
