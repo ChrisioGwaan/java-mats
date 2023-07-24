@@ -130,18 +130,39 @@ ln8:     System.out.println("");
 ln9: }
 ```
 
- 
-* `i = 0` :arrow_right: `i < 10`? Yes, go on :arrow_right: ln2 :arrow_right: ln3 :arrow_right: ln4 :arrow_right:
-    * `j = 0` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 1`
-    * `j = 1` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 2`
-    * `j = 2` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 3`
-    * `j = 3` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 4`
-    * ......
-    * `j = 8` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 9`
-    * `j = 9` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 10`
-    * `j = 10` :arrow_right: `j < 10`? No :arrow_right: ln6 :arrow_right:
+1. 
 
-ln7 :arrow_right: ln8
+`i = 0` :arrow_right: `i < 10`? Yes, go on :arrow_right: ln2 :arrow_right: ln3 :arrow_right: ln4 :arrow_right:
+* `j = 0` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 1`
+* `j = 1` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 2`
+* `j = 2` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 3`
+* `j = 3` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 4`
+* ......
+* `j = 8` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 9`
+* `j = 9` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 10`
+* `j = 10` :arrow_right: `j < 10`? No :arrow_right: ln6 :arrow_right:
+
+ln7 :arrow_right: ln8 :arrow_right: `i++` means `i = 1` :arrow_right:
+
+2. 
+
+`i = 1` :arrow_right: `i < 10`? Yes, go on :arrow_right: ln2 :arrow_right: ln3 :arrow_right: ln4 :arrow_right:
+* `j = 0` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 1`
+* `j = 1` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 2`
+* `j = 2` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 3`
+* `j = 3` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 4`
+* ......
+* `j = 8` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 9`
+* `j = 9` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 10`
+* `j = 10` :arrow_right: `j < 10`? No :arrow_right: ln6 :arrow_right:
+
+ln7 :arrow_right: ln8 :arrow_right: `i++` means `i = 2` :arrow_right:
+
+3. 
+
+and so on....
+
+:link: [**Better Visualization**](https://cscircles.cemc.uwaterloo.ca/java_visualize/#code=public+class+ClassNameHere+%7B%0A+++public+static+void+main(String%5B%5D+args)+%7B%0A++++++for+(int+i+%3D+0%3B+i+%3C+10%3B+i%2B%2B)+%7B%0A++++++++++++System.out.println(%22DIAMOND+LEVEL%3A+%22+%2B+i)%3B%0A++++++++%0A++++++++++++for+(int+j+%3D+0%3B+j+%3C+10%3B+j%2B%2B)+%7B%0A++++++++++++++++System.out.print(%22XRAY+%22)%3B%0A++++++++++++%7D%0A++++++++%0A++++++++++++System.out.println(%22%22)%3B%0A+++++++%7D%0A+++%7D%0A%7D&mode=display&curInstr=0)
 
 > Enhanced for loop
 
