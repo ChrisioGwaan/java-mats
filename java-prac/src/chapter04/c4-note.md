@@ -4,8 +4,9 @@
 
 * I. [For Loop](#1-for)
 * II. [While Loop](#2-while)
-* III. [Enumerations](#3-elif)
-* IV. [Q & A](#4-qa)
+* III. [Enumerations](#3-enum)
+* IV. [Scope](#4-scope)
+* V. [Q & A](#4-qa)
 
 
 <h2 id="1-for">I. For Loop</h2>
@@ -119,27 +120,58 @@ System.out.println(rDessert);
 :bookmark_tabs: Check out the following code snippet
 
 ```
-ln1: for (int i = 0; i < 10; i++) {
-ln2:     System.out.println("DIAMOND LEVEL: " + i);
-ln3: 
-ln4:     for (int j = 0; j < 10; j++) {
-ln5:         System.out.print("XRAY ");
-ln6:     }
-ln7: 
-ln8:     System.out.println("");
-ln9: }
+for (int i = 0; i < 10; i++) {
+    System.out.println("DIAMOND LEVEL: " + i);
+
+    for (int j = 0; j < 10; j++) {
+        System.out.print("XRAY ");
+    }
+ 
+    System.out.println("");
+}
 ```
 
 The following link will show how the code snippet is doing.
 
 :link: [**Better Visualization**](https://cscircles.cemc.uwaterloo.ca/java_visualize/#code=public+class+ClassNameHere+%7B%0A+++public+static+void+main(String%5B%5D+args)+%7B%0A++++++for+(int+i+%3D+0%3B+i+%3C+10%3B+i%2B%2B)+%7B%0A++++++++++++System.out.println(%22DIAMOND+LEVEL%3A+%22+%2B+i)%3B%0A++++++++%0A++++++++++++for+(int+j+%3D+0%3B+j+%3C+10%3B+j%2B%2B)+%7B%0A++++++++++++++++System.out.print(%22XRAY+%22)%3B%0A++++++++++++%7D%0A++++++++%0A++++++++++++System.out.println(%22%22)%3B%0A+++++++%7D%0A+++%7D%0A%7D&mode=display&curInstr=0)
 
+Meanwhile, keep in mind to count how many times the program has been running.  In total, it runs 100 times, right? For `i < 10`, the outer `for` loop has 10 iterations, so does `j` of the inner `for` loop. Thus, it follows a formula of `i` * `y` for the nested loop.
+
 > Enhanced for loop
 
+:bookmark_tabs: Check out the following code snippet
 
+```
+String quote = "Lime and Pink is the BEST combo, ALWAYS!";
+
+for (char letter : quote.toCharArray()) {
+  System.out.println(letter);
+}
+```
+
+`toCharArray()`: Converts it into a character array.
+
+**The enhanced for loop iterates over each character in the array and prints it to the console.**
 
 <h2 id="2-while">II. While Loop</h2>
 
-<h2 id="3-fl">III. Enumerations</h2>
+> Syntax (In Good Practice)
 
-<h2 id="4-qa">IV. Enumerations</h2>
+```
+while (condition) {
+    doSomething();
+}
+```
+
+`break` and `continue` still work in `while` loop.
+
+> Common multiple inputs question
+
+Write a program that takes multiple integer numbers and stops the input if any negative digital number exist
+
+
+<h2 id="3-enum">III. Enumerations</h2>
+
+<h2 id="4-scope">IV. Scope</h2>
+
+<h2 id="4-qa">IV. Q & A</h2>
