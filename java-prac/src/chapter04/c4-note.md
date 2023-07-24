@@ -15,7 +15,7 @@
 :bookmark_tabs: Check out the following code snippet
 
 ```
-for (int i = 0; i < size; ++i) {
+for (int i = 0; i < size; i++) {
     doSomething();
 }
 ```
@@ -58,8 +58,92 @@ int i = 5;
 i += 1;
 ```
 
-> break and continue
+> `break`
 
+:bookmark_tabs: Check out the following code snippet
+
+```
+for (int i = 1; i <= 10; i++) {
+    if (i == 5) {
+        break; // Terminate the loop when i becomes 5
+    }
+    System.out.print(i + " ");
+}
+```
+
+The output will be `1 2 3 4 `. Because when `i = 5`, the iteration ends and the loop is terminated.
+
+> `continue`
+
+:bookmark_tabs: Check out the following code snippet
+
+```
+for (int i = 1; i <= 5; i++) {
+    if (i == 3) {
+        continue; // Skip the current iteration when i is 3
+    }
+    System.out.print(i + " ");
+}
+```
+
+The output will be `1 2 4 5 `. Because when `i = 3`, the `System.out.print(i + " ")` will not be executed and the iteration continues.
+
+> String Iteration
+
+Print characters of a String one by one:
+
+```
+String dessert = "Neapolitan Ice Cream";
+
+for (int i = 0; i < dessert.length(); i++) {
+    char letter = dessert.charAt(i);
+    System.out.println(letter);
+}
+```
+
+Print a String in the reverse direction:
+
+```
+String dessert = "Neapolitan Ice Cream";
+String rDessert = "";
+
+for (int i = dessert.length() - 1; i >= 0; i--) {
+    rDessert += dessert.charAt(i); // Store every characters of dessert from reverse direction into varaible rDessert
+}
+
+System.out.println(rDessert);
+```
+
+> Nested Loop
+
+:bookmark_tabs: Check out the following code snippet
+
+```
+ln1: for (int i = 0; i < 10; i++) {
+ln2:     System.out.println("DIAMOND LEVEL: " + i);
+ln3: 
+ln4:     for (int j = 0; j < 10; j++) {
+ln5:         System.out.print("XRAY ");
+ln6:     }
+ln7: 
+ln8:     System.out.println("");
+ln9: }
+```
+
+ 
+* `i = 0` :arrow_right: `i < 10`? Yes, go on :arrow_right: ln2 :arrow_right: ln3 :arrow_right: ln4 :arrow_right:
+    * `j = 0` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 1`
+    * `j = 1` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 2`
+    * `j = 2` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 3`
+    * `j = 3` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 4`
+    * ......
+    * `j = 8` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 9`
+    * `j = 9` :arrow_right: `j < 10`? Yes, go on :arrow_right: ln5 :arrow_right: `j++` means `j = 10`
+    * `j = 10` :arrow_right: `j < 10`? No :arrow_right: ln6 :arrow_right:
+
+ln7 :arrow_right: ln8
+
+> Enhanced for loop
 
 
 <h2 id="2-while">II. While Loop</h2>
