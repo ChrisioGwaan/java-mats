@@ -167,11 +167,74 @@ while (condition) {
 
 > Common multiple inputs question
 
-Write a program that takes multiple integer numbers and stops the input if any negative digital number exist
+Write a program that takes multiple integer numbers and stops the input by any negative digital number.
 
+Return a sum of the numbers from user input.
+
+* Input: `1 11 23 13 6 12 7 9 -1`
+* Output: `82`
+
+:bookmark_tabs: Check out the following code snippet
+
+```
+Scanner scnr = new Scanner(System.in);
+
+int sum = 0;                    // create a sum variable for now
+int userNum = scnr.nextInt();   // get the first input
+
+// while loop will check if userNum >= 0
+while (userNum >= 0) {
+                                // if userNum >= 0, it will be added to the sum
+    sum += userNum;             // remember to add sum itself
+    userNum = scnr.nextInt();   // get the next input
+}
+
+System.out.println(sum);
+
+scnr.close();
+```
 
 <h2 id="3-enum">III. Enumerations</h2>
 
+> Cant find any key knowledge points here, if you do have quests, tell me :star2: :smile: :pray: 
+
 <h2 id="4-scope">IV. Scope</h2>
 
+In Java, **scope** refers to the region of the program where a variable is _visible_ and _accessible_. The **scope** of a variable determines where in the program the variable can be used, and it is defined by the _code block_ in which the variable is declared.
+
+```
+int a = 0;
+{
+    int b = 10;
+    System.out.println(b);
+}
+System.out.println(a);
+System.out.println(b); // causes error because variable b is declared in an inner local scope
+```
+
+Let's look back to the for loop here:
+
+```
+for (int i = 0; i < 10; i++) {
+    System.out.println(i);
+}
+
+System.out.println(i); // causes error because variable i is declared in an inner local scope
+```
+
+You could write the following code if you want to use the variable `i` after the for loop.
+
+```
+int i = 0;
+for (i = 0; i < 10; i++) {
+    System.out.println(i);
+}
+
+System.out.println(i); // 10
+```
+
 <h2 id="4-qa">IV. Q & A</h2>
+
+Q1: Waiting~
+
+A1: Waiting for the Q1's Waiting~
