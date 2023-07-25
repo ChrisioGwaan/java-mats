@@ -157,6 +157,8 @@ for (char letter : quote.toCharArray()) {
 
 > Syntax (In Good Practice)
 
+:bookmark_tabs: Check out the following code snippet
+
 ```
 while (condition) {
     doSomething();
