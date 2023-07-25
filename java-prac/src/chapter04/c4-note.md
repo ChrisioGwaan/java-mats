@@ -91,7 +91,7 @@ The output will be `1 2 4 5 `. Because when `i = 3`, the `System.out.print(i + "
 
 > String Iteration
 
-Print characters of a String one by one:
+:bulb: Print characters of a String one by one:
 
 ```
 String dessert = "Neapolitan Ice Cream";
@@ -102,7 +102,7 @@ for (int i = 0; i < dessert.length(); i++) {
 }
 ```
 
-Print a String in the reverse direction:
+:bulb: Print a String in the reverse direction:
 
 ```
 String dessert = "Neapolitan Ice Cream";
@@ -135,7 +135,7 @@ The following link will show how the code snippet is doing.
 
 :link: [**Better Visualization**](https://cscircles.cemc.uwaterloo.ca/java_visualize/#code=public+class+ClassNameHere+%7B%0A+++public+static+void+main(String%5B%5D+args)+%7B%0A++++++for+(int+i+%3D+0%3B+i+%3C+10%3B+i%2B%2B)+%7B%0A++++++++++++System.out.println(%22DIAMOND+LEVEL%3A+%22+%2B+i)%3B%0A++++++++%0A++++++++++++for+(int+j+%3D+0%3B+j+%3C+10%3B+j%2B%2B)+%7B%0A++++++++++++++++System.out.print(%22XRAY+%22)%3B%0A++++++++++++%7D%0A++++++++%0A++++++++++++System.out.println(%22%22)%3B%0A+++++++%7D%0A+++%7D%0A%7D&mode=display&curInstr=0)
 
-Meanwhile, keep in mind to count how many times the program has been running.  In total, it runs 100 times, right? For `i < 10`, the outer `for` loop has 10 iterations, so does `j` of the inner `for` loop. Thus, it follows a formula of `i` * `y` for the nested loop.
+:bulb: Meanwhile, keep in mind to count how many times the program has been running.  In total, it runs 100 times, right? For `i < 10`, the outer `for` loop has 10 iterations, so does `j` of the inner `for` loop. Thus, it follows a formula of `i` * `y` for the nested loop.
 
 > Enhanced for loop
 
@@ -151,7 +151,7 @@ for (char letter : quote.toCharArray()) {
 
 `toCharArray()`: Converts it into a character array.
 
-**The enhanced for loop iterates over each character in the array and prints it to the console.**
+:bulb: **The enhanced for loop iterates over each character in the array and prints it to the console.**
 
 <h2 id="2-while">II. While Loop</h2>
 
@@ -224,7 +224,7 @@ for (int i = 0; i < 10; i++) {
 System.out.println(i); // causes error because variable i is declared in an inner local scope
 ```
 
-You could write the following code if you want to use the variable `i` after the for loop.
+:bulb: You could write the following code if you want to use the variable `i` after the for loop.
 
 ```
 int i = 0;
