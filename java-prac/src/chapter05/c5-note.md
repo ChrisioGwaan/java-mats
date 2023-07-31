@@ -41,12 +41,15 @@ import java.util.Random;
 
 ```
 Random random = new Random();
+
 int a = 0;
+double b = 1;
 
 a = random.nextInt(100);
+// Common: nextDouble(), nextFloat(), nextLong()
 ```
 
-`nextInt` takes an integer argument, `100`, and returns a random integer between `0` and `100-1` (**inclusive**).
+`nextInt` takes an integer argument, `100`, and returns a random integer between `0` and `100-1` (**inclusive**). For the other types, they follow the same rule.
 
 <h2 id="4-qa">IV. Q & A</h2>
 
