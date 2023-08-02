@@ -28,8 +28,9 @@ class prac2 {
         else {
 
             System.out.println("Fermat was correct!");
-            
+
             }
+            scnr.close();
     
         }
     }
