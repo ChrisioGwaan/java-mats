@@ -8,11 +8,9 @@ class prac1 {
 
         int x = scnr.nextInt();
         
-        if (x > 0) {
-            if (x < 10) {
+        if ((x > 0) && (x < 10)) {
                 System.out.println("positive single digit number.");
             }
-        }
 
         scnr.close();
     }
