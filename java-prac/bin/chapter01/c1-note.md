@@ -6,6 +6,7 @@ Extract some important notes and append additional concepts here, hope it could 
 * [Declaration & Memory Allocation](#2-DMA)
 * [Input](#3-Input)
 * [Maths](#4-Maths)
+* [Reminder](#5-Reminder)
 
 <h2 id="1-Output">Output</h2>
 
@@ -60,6 +61,59 @@ System.err.println("404 NOT FOUND"); // Just an example
 
 * Type `sysout` and press ***tab***
 
+> Printf specifiers
+
+| Specifier   | Data Type     |
+|-------------|---------------|
+| `%d`        | int           |
+| `%s`        | String        |
+| `%c`        | char          |
+| `%f`        | float, double         |
+| `%e`        | Exponential, scientific notation, float or double |
+| `%o`        | Octal number  |
+| `%x`        | Hexadecimal number |
+| `%%`        | Preserve percentage sign |
+| `%n`        | New line |
+
+> Additional Printf specifiers - **int**
+
+```
+int population = 8500000; // EXAMPLE
+```
+
+| Specifier  |     Output     | Explain                      |
+|------------|----------------|------------------------------|
+| `%,12d`    | `   8,500,000` | 12 spaces in the String, will leave spaces at front if possible, includes grouping separators |
+| `%+,12d`   | `  +8,500,000` | Add a positive sign `+` at front, 12 spaces in the String, will leave spaces at front if possible |
+| `%-+,12d`  | `+8,500,000  ` | Add a positive sign `+` at front, 12 spaces in the String, will leave spaces at end if possible |
+| `%012d`    | `000008500000` | 12 spaces in the String, will leave `0` at front if possible |
+| `%o`       | `40331440`     | Octal |
+| `%x`       | `81b320`       | Hexadecimal |
+
+> Additional Printf specifiers - **int**
+
+```
+double pearls_sell = 15.2; // EXAMPLE, in Java, mostly use double type instead of float
+```
+
+| Specifier |     Output     | Explain                      |
+|-----------|----------------|------------------------------|
+| `%.4f`    | `15.2000`      | 4 decimal places             |
+
+> Additional Printf specifiers - **String**
+
+```
+String name = "dango" // EXAMPLE
+```
+
+| Specifier |     Output     | Explain                      |
+|-----------|----------------|------------------------------|
+| `%7s`     | ` dango` | 7 spaces in the String, will leave spaces at front if possible |
+| `%-7s`    | `dango ` | 7 spaces in the String, will leave spaces at end if possible  |
+| `%-7S`    | ` DANGO` | `S` will uppercase `dango` |
+
+As you may notice that some specifiers work in all data types, for instance, `%2d`, `%2f`, `%2s`, even `%-2d`.
+
 > ***GOOD PRACTICE***
 
 **Always preserve a newline at the end of a program.**
@@ -80,9 +134,23 @@ System.err.println("404 NOT FOUND"); // Just an example
 
 No `String` there right? Remember a sentence: **In programming, a String is made up of multiple characters.**
 
+Did I mention `double` is preferable in Java? Statistically say YES, because the range of `double` is `1.7e-308 to 1.7e+308` and `float` one is `3.4e-038 to 3.4e+038`.
+
+Apparently, `double` is larger than `float`.
+
+**Science Notation** yes will be explained here.
+
+For example, `1.5e+3` in maths will be `1500`
+
+$$1.5 * 10^{3}$$
+
+How about `1.5e-3`, it'll be `0.0015`
+
+$$1.5 * 10^{-3}$$
+
 > Initialisation (in details)
 
-Looking at the following code snippet:
+Look at the following code snippet:
 ```
 int min; // Declare an integer variable without initialising
 int max = 0; // Set a default integer value to 0
@@ -148,3 +216,10 @@ import java.lang.Math;
 * `Math.abs()`, absolute value
 * `Math.PI`, the value of π
 
+<h2 id="5-Reminder">Reminder</h2>
+
+**Forget about the good practice things while you're doing challenges.** \
+**Try to understand the questions.** \
+**Come up with a quick solution and try that out even if it is wrong.** \
+**Keep debugging, practicing.**
+**Remember, ask questions if you may have, or give me feedback on this, OR feel free to commit your changes at any time (Collaborator privilege)!**
