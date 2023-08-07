@@ -6,7 +6,7 @@
 
 VS Code provides markdown preview features. However, some features, such as Emojis, Maths LaTex etc, may not be shown in vs code preview. It's suggested that reading markdown on GitHub Website is way better.
 
-![](src/img/Screenshot%202023-08-03%20083420.png)
+![](lib/img/Screenshot%202023-08-03%20083420.png)
 
 ## Java Coding Style
 
