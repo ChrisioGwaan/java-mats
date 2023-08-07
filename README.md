@@ -1,6 +1,6 @@
 # Java Learning Materials 
 
-`$ Project Status: 45.471985%...`
+`$ Project Status: 52.64310725%...`
 
 ```
 --- java-prac
