@@ -11,7 +11,7 @@ class Food {
 
     // TODO: Create a private boolean variable called isHealthy
 
-    // TODO: Default Constructor
+    // TODO: Default Constructor, initialise all variables to "", 0, or false
 
     // TODO: Another Constructor that takes in a String name, double calories, int quantity, and boolean isHealthy
 
