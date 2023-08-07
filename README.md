@@ -4,9 +4,11 @@
 
 ```
 --- java-prac
-   |
+   | ---> bin, do not make changes here
    |
    | ---> src, the materials are under this fodler.
+   |
+   | ---> lib, dependencies folder (img)
 ```
 
 > Chapter 1 - Basic I: Variables, assignments, maths, I/O (Input/Output)
