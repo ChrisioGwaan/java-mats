@@ -22,9 +22,9 @@ class FoodMain {
 
         /*
          * The following commented code is not necessary
-         * because we can try to avoid duplicated code here and inside the while loop
+         * because we can try to avoid duplicated code here (code only inside the while loop)
          * by setting variable inputStopBool into true
-         * which also means the program will enter the first while loop
+         * which also means the program will always enter the first while loop
          */
 
         // System.out.println("Food name: ");
