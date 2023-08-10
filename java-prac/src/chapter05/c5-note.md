@@ -3,9 +3,8 @@
 :ice_cream:
 
 * I. [Array](#1-array)
-* II. [ArrayList](#2-arraylist)
-* III. [Random Numbers](#3-random)
-* IV. [Q & A](#4-qa)
+* II. [Random Numbers](#2-random)
+* III. [Q & A](#3-qa)
 
 <h2 id="1-array">I. Array</h2>
 
@@ -13,11 +12,7 @@
 
 **Finish all your Day 6 practices on Zybook and send screenshots to me so I can assess your level of knowledge** :smile: :pray:
 
-<h2 id="2-arraylist">II. ArrayList</h2>
-
-> TBD: This might be in your Objects and Classes.
-
-<h2 id="3-random">III. Random Numbers</h2>
+<h2 id="2-random">II. Random Numbers</h2>
 
 > Nondeterministic & Deterministic
 
@@ -51,7 +46,7 @@ a = random.nextInt(100);
 
 `nextInt` takes an integer argument, `100`, and returns a random integer between `0` and `100-1` (**inclusive**). For the other types, they follow the same rule.
 
-<h2 id="4-qa">IV. Q & A</h2>
+<h2 id="3-qa">IV. Q & A</h2>
 
 Q1: Waiting~
 
