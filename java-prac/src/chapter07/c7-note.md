@@ -98,17 +98,61 @@ So be careful with the iterating index variable and the condition.
 
 ```
 Scanner scnr = new Scanner(System.in);
-ArrayList<Integer> numList = new ArrayList<Integer>();
-bool isRunning = false;
+int amount = 0; // Initialised to 0
+int num_array[]; // Initialised without a size, no memory allocated for it yet
 
-while (!isRunning)
+System.out.println("How many numbers you wanna add to the array?");
+amount = scnr.nextInt();
 
+num_array = new int[amount]; // allocated memory for it now
 
-for (int i = 1; i < 10; i++) {
-    System.out.println("Current: " + i); // 1 operation
-    System.out.println("Iterating...*"); // 1 operation
+// Storing elements into array depends on the size -> amount
+for (int i = 0; i < amount; i++) {
+    System.out.print("[" + i + "]: ");
+    int temp_val = scnr.nextInt();
+    num_array[i] = temp_val;
+}
+
+// Printing all elements out
+for (int i = 0; i < amount; i++) {
+    System.out.println("Val: " + num_array[i]);
 }
 ```
+
+In this varaint, the amount of operations that the program will execute is **unpredictable**. Because the varaible `amount` is from the user input and the size of array depends the value of `amount`. Meanwhile, both `for-loops` are separated in the same scope and iterates based on the size of array. Therefore, the complexity is $O(n + n) = O(2n) = O(n)$.
+
+:zap: Variant 5
+
+```
+Scanner scnr = new Scanner(System.in);
+int amount = 0; // Initialised to 0
+int num_array[]; // Initialised without a size, no memory allocated for it yet
+
+System.out.println("How many numbers you wanna add to the array?");
+amount = scnr.nextInt();
+
+num_array = new int[amount]; // allocated memory for it now
+
+// Storing elements into array depends on the size -> amount
+for (int i = 0; i < amount; i++) {
+    System.out.print("[" + i + "]: ");
+    int temp_val = scnr.nextInt();
+    num_array[i] = temp_val;
+}
+
+// Printing all elements out - version 2.0
+
+for (int i = 0; i < amount; i++) {
+    System.out.println("Index " + i + " iteration!");
+    for (int j = 0; j < amount; j++) {
+        System.out.println("Val: " + num_array[i]);
+    }
+}
+```
+
+In version 2.0 printing, there's a nested `for-loop` fo sho. To find complexity, we just need to focus the size -> `amount` <-. Both `for-loops` use the same size for iteration, each of them has the complexity of $O(n)$. And because of nested relationship, the complexity will be $O(n*n) = O(n^{2})$.
+
+Therefore, if there is another `for` inside the `j=0` for loop, $O(n*n*n) = O(n^{3})$. And so on.
 
 <h2 id="3-qa">III. Q & A</h2>
 
