@@ -4,12 +4,20 @@ package chapter06;
 class Food {
 
     // TODO: Create a private String variable called name
+    private String name;
+}
 
     // TODO: Create a private double variable called calories
+    private double calories;
+}
 
     // TODO: Create a private int variable called quantity
+    private int quantity;
+}
 
     // TODO: Create a private boolean variable called isHealthy
+    private boolean isHealthy;
+}
 
     // TODO: Default Constructor, initialise all variables to "", 0, or false
 
