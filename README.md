@@ -1,12 +1,14 @@
 # Java Learning Materials 
 
-`$ Project Status: 19.27777%...`
+`$ Project Status: 52.64310725%...`
 
 ```
 --- java-prac
-   |
+   | ---> bin, do not make changes here
    |
    | ---> src, the materials are under this fodler.
+   |
+   | ---> lib, dependencies folder (img)
 ```
 
 > Chapter 1 - Basic I: Variables, assignments, maths, I/O (Input/Output)
@@ -17,17 +19,15 @@
 
 > Chapter 4 - Basic IV: For loop, while loop, enumerations
 
-> Chapter 5 - Basic V: Array, ArrayList
+> Chapter 5 - Basic V: Array
 
-> Chapter 6 - Basic VI: Methods
+> Chapter 6 - Basic VI: Methods, ArrayList, Object, Class & Inheritance
 
-> Chapter 7 - Basic VII: Object, Class & Inheritance
+> Chapter 7 - Intermediate I: Algorithm Concepts
 
-> Chapter 8 - Intermediate I: Algorithm Concepts
+> Chapter 8 - Intermediate II: Algorithm -> Searching
 
-> Chapter 9 - Intermediate II: Algorithm -> Searching
-
-> Chapter 10 - Intermediate III: Algorithm -> Sorting
+> Chapter 9 - Intermediate III: Algorithm -> Sorting
 
 > Chapter Xpecial edition - float, ...
 
