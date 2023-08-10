@@ -152,7 +152,7 @@ for (int i = 0; i < amount; i++) {
 
 In version 2.0 printing, there's a nested `for-loop` fo sho. To find complexity, we just need to focus the size -> `amount` <-. Both `for-loops` use the same size for iteration, each of them has the complexity of $O(n)$. And because of nested relationship, the complexity will be $O(n*n) = O(n^{2})$.
 
-Therefore, if there is another `for` inside the `j=0` for loop, $O(n*n*n) = O(n^{3})$. And so on.
+Therefore, if there is another `for` inside the `j=0` for loop, $O(n * n * n) = O(n^{3})$. And so on.
 
 <h2 id="3-qa">III. Q & A</h2>
 
