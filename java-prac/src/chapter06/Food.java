@@ -17,7 +17,6 @@ class Food {
 
     // TODO: Create a private boolean variable called isHealthy
     private boolean isHealthy;
-}
 
     // TODO: Default Constructor, initialise all variables to "", 0, or false
     Food() {
