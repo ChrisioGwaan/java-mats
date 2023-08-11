@@ -10,7 +10,90 @@
 
 <h2 id="1-class">I. Class</h2>
 
-Learn more about how classes work through practicing.
+> Field Initialisation
+
+```
+class Car {
+    // Initialised field [Start]
+    private Model model;
+    private String name;
+    // Initialised field [End]
+
+    // Default Constructor
+    ...
+}
+```
+
+> Default Constructor (without any arguments)
+
+```
+class Car {
+    ...
+    // Initialised fields
+
+    // Default Constructor [Start]
+    public Car() {
+        // Initialised variables or instances to default values
+        model = new Model();
+        name = "";
+    }
+    // Default Constructor [End]
+
+    // Getter, Setter & other methods
+    ...
+}
+```
+
+You may wonder how default constructor works in main program. We usually initialise  an object, for example, a class called `City`. If we want to use the class, we need to declare an instance, `City melbourne = new City();`. `melbourne` is an instance, and `City()` is calling a default constructor from `City` class.
+
+> Implicit Parameter - `this`
+
+Using `this` allows you to access class members. It's pretty necessary when field members and parameters share the same name.
+
+Even when field members and parameters do not share the same name, it is recommended to use `this` for accessing class members.
+
+> Overload Constructor
+
+In `Food.java` for example,
+
+```
+class Food {
+    private String name;
+
+    public Food() {
+        name = "";
+    }
+
+    // Overload Constructor, with argument(s)
+    public Food(String name) {
+        this.name = name; // field member and parameter share the same name
+    }
+
+    public void setName(String name) {
+        this.name = name
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    // other methods
+    ...
+}
+```
+
+In `main.java` for example,
+
+```
+String name = "Dango";
+
+// Using Default Constructor
+Food food1 = new Food();
+food1.setName(name);
+
+// Using Overload Constructor
+Food food2 = new Food(name);
+```
 
 <h2 id="2-Method">II. Method</h2>
 
