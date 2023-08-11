@@ -255,7 +255,7 @@ Basically, **Array** needs a specified size to be declared, but **ArrayList** do
 
 When creating instances of subclasses, you **can** also use their main class methods without declaring an instance of main class. 
 
-On the other hand, if an instance is declared and refers to the main class, you **cannot** use subclasses methods.
+On the other hand, you **cannot** use subclasses methods if an instance is declared and refers to the main class.
 
 > Completed Implementation UML Class Diagram of the example
 
