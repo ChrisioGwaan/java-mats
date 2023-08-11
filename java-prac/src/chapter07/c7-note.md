@@ -49,7 +49,7 @@ By comparing $O(log n)$ and $O(n^{2})$, suppose 1 element needs 1 second of oper
 * There're two different programs that have the same input $x=4$. The time for $O(log n)$ would be $log 4$ seconds (approximate $0.6020$), while the $O(n^{2})$ one would be $4^{2}$ which is $16$ seconds.
 * There're two different programs that have the same input $x=5$. The time for $O(log n)$ would be $log 5$ seconds (approximate $0.6989$), while the $O(n^{5})$ one would be $5^{2}$ which is $25$ seconds.
 
-As you can the rate of $O(n^{2})$ is apparently higher than the $O(log n)$ one, that's why the complexity of $O(n^{2})$ is considered as *Horrible*.
+As you can see, the rate of $O(n^{2})$ is apparently higher than the $O(log n)$ one, that's why the complexity of $O(n^{2})$ is considered as *Horrible*.
 
 <h2 id="2-ca">II. Coding Example - Analysis</h2>
 
