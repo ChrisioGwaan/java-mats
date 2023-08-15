@@ -7,8 +7,6 @@
 
 <h2 id="1-sAl">I. Searching Algorithm</h2>
 
-**Don't analyse the algorithm in details for this stage. Practice practice practice!**
-
-
+**Don't analyse the algorithm in details at this stage. Practice practice practice!**
 
 
