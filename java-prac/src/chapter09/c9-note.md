@@ -8,3 +8,9 @@
 <h2 id="1-sAl">I. Sorting Algorithm</h2>
 
 **Don't analyse the algorithm in details at this stage. Practice practice practice!**
+
+<h2 id="2-qa">II. Q & A</h2>
+
+Q1: Waiting~
+
+A1: Waiting for the Q1's Waiting~
