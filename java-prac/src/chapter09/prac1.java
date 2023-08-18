@@ -27,10 +27,34 @@ class prac1 {
     }
 
     public static int[] selectionSort(final int[] intArray) {
+        int i;
+        int j;
+        int smallestIndex;
+        int tempVar; //varibale used for swapping
+
+        for (i = 0; i < intArray.length - 1; ++i) {
+
+            smallestIndex = i;
+            for (j = i + 1; j < intArray.length; ++j) {
+
+                 if (intArray[j] < intArray[smallestIndex]) {
+                     smallestIndex = j;
+            }
+        }
+        //swap intArray number at index [i]  with the [smallestIndex]
+         tempVar = intArray[i];
+         intArray[i] = intArray[smallestIndex];
+         intArray[smallestIndex] = tempVar;
+  
+
         // TODO: Implement the selection sort algorithm
         // sort the intArray and return it
 
-        return intArray;
+        // return intArray;
     }
+    return intArray;
 
+    }
 }
+
+

@@ -273,6 +273,60 @@ Code has been provided in `oosd` folder. Those are conceptional code and you don
 
 <h2 id="5-qa">V. Q & A</h2>
 
-Q1: /
+Q1: How do classes actually work with `ArrayList`?
 
-A1: /
+A1:
+
+First, we start from looking at a simple `ArrayList`
+
+```
+ArrayList<Integer> example1 = new ArrayList<Integer>();
+example1.add(1);
+example1.add(12);
+example1.add(122);
+example1.add(1222);
+```
+
+In memory it would look like
+
+```
+[0]: 1
+[1]: 12
+[2]: 122
+[3]: 1222
+```
+
+On the other hand, when the data type of an ArrayList is a class,
+
+```
+ArrayList<Food> foodlist = ArrayList<Food>();
+
+foodName = "Dango";
+foodCalories = 12.0;
+foodQuantity = 2;
+foodisHealthy = true;
+
+foodlist.add(new Food(foodName, foodCalories, foodQuantity, foodisHealthy));
+foodlist.add(new Food("Ramen", 890.12, 1, true));
+...
+```
+
+In memory: 
+
+```
+[0]: {"dango", 12.0, 2, true}
+[1]: {"ramen", 890.12, 1, true}
+[2]: {...}
+[3]: {...}
+```
+
+Since each element contains multiple variables belongs to Food class,
+that's why we need an instance to access them
+
+Assume the instance is exam1, `exam1.getFoodName();` in Food class getter method
+
+
+Q2: ?
+
+A2: ?
+
