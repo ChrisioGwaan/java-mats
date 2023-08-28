@@ -10,7 +10,90 @@
 
 <h2 id="1-class">I. Class</h2>
 
-Learn more about how classes work through practicing.
+> Field Initialisation
+
+```
+class Car {
+    // Initialised field [Start]
+    private Model model;
+    private String name;
+    // Initialised field [End]
+
+    // Default Constructor
+    ...
+}
+```
+
+> Default Constructor (without any arguments)
+
+```
+class Car {
+    ...
+    // Initialised fields
+
+    // Default Constructor [Start]
+    public Car() {
+        // Initialised variables or instances to default values
+        model = new Model();
+        name = "";
+    }
+    // Default Constructor [End]
+
+    // Getter, Setter & other methods
+    ...
+}
+```
+
+You may wonder how default constructor works in main program. We usually initialise  an object, for example, a class called `City`. If we want to use the class, we need to declare an instance, `City melbourne = new City();`. `melbourne` is an instance, and `City()` is calling a default constructor from `City` class.
+
+> Implicit Parameter - `this`
+
+Using `this` allows you to access class members. It's pretty necessary when field members and parameters share the same name.
+
+Even when field members and parameters do not share the same name, it is recommended to use `this` for accessing class members.
+
+> Overload Constructor
+
+In `Food.java` for example,
+
+```
+class Food {
+    private String name;
+
+    public Food() {
+        name = "";
+    }
+
+    // Overload Constructor, with argument(s)
+    public Food(String name) {
+        this.name = name; // field member and parameter share the same name
+    }
+
+    public void setName(String name) {
+        this.name = name
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    // other methods
+    ...
+}
+```
+
+In `main.java` for example,
+
+```
+String name = "Dango";
+
+// Using Default Constructor
+Food food1 = new Food();
+food1.setName(name);
+
+// Using Overload Constructor
+Food food2 = new Food(name);
+```
 
 <h2 id="2-Method">II. Method</h2>
 
@@ -172,7 +255,7 @@ Basically, **Array** needs a specified size to be declared, but **ArrayList** do
 
 When creating instances of subclasses, you **can** also use their main class methods without declaring an instance of main class. 
 
-On the other hand, if an instance is declared and refers to the main class, you **cannot** use subclasses methods.
+On the other hand, you **cannot** use subclasses methods if an instance is declared and refers to the main class.
 
 > Completed Implementation UML Class Diagram of the example
 
@@ -190,6 +273,60 @@ Code has been provided in `oosd` folder. Those are conceptional code and you don
 
 <h2 id="5-qa">V. Q & A</h2>
 
-Q1: /
+Q1: How do classes actually work with `ArrayList`?
 
-A1: /
+A1:
+
+First, we start from looking at a simple `ArrayList`
+
+```
+ArrayList<Integer> example1 = new ArrayList<Integer>();
+example1.add(1);
+example1.add(12);
+example1.add(122);
+example1.add(1222);
+```
+
+In memory it would look like
+
+```
+[0]: 1
+[1]: 12
+[2]: 122
+[3]: 1222
+```
+
+On the other hand, when the data type of an ArrayList is a class,
+
+```
+ArrayList<Food> foodlist = ArrayList<Food>();
+
+foodName = "Dango";
+foodCalories = 12.0;
+foodQuantity = 2;
+foodisHealthy = true;
+
+foodlist.add(new Food(foodName, foodCalories, foodQuantity, foodisHealthy));
+foodlist.add(new Food("Ramen", 890.12, 1, true));
+...
+```
+
+In memory: 
+
+```
+[0]: {"dango", 12.0, 2, true}
+[1]: {"ramen", 890.12, 1, true}
+[2]: {...}
+[3]: {...}
+```
+
+Since each element contains multiple variables belongs to Food class,
+that's why we need an instance to access them
+
+Assume the instance is exam1, `exam1.getFoodName();` in Food class getter method
+
+
+Q2: ?
+
+A2: ?
+
