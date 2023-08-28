@@ -1,7 +1,5 @@
 # Chapter 7 - Intermediate I
 
-:tulip: :cherry_blossom:
-
 * I. [Algorithm & Analysis](#1-ac)
   * I-I. [O Notation](#1a)
   * I-II. [Ω Notation](#1b)
@@ -156,7 +154,7 @@ Therefore, if there is another `for` inside the `j=0` for loop, $O(n * n * n) = 
 
 <h2 id="3-qa">III. Q & A</h2>
 
-Q1: Waiting~
+Q1: TBA
 
-A1: Waiting for the Q1's Waiting~
+A1: TBA
 

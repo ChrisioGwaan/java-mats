@@ -1,6 +1,4 @@
-# Java Learning Materials 
-
-`$ Project Status: 90%...`
+# Java Learning Notes 
 
 ```
 --- java-prac
@@ -30,9 +28,3 @@
 > Chapter 9 - Sorting Algorithm                          Ref: [Day 10]
 
 > Chapter 10 - File and Object Manipulation               Ref: [Day 11]
-
-> Chapter 11 - float, set
-
-> Chapter 12 - 
-
-> TBA, recursion, exception, ADT, ...
