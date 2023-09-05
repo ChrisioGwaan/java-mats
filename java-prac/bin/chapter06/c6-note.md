@@ -1,5 +1,7 @@
 # Chapter 6 - Basic VI
 
+:tea:
+
 * I. [Class](#1-class)
 * II. [Method](#2-Method)
 * III. [ArrayList](#3-ArrayList)
@@ -327,3 +329,4 @@ Assume the instance is exam1, `exam1.getFoodName();` in Food class getter method
 Q2: ?
 
 A2: ?
+

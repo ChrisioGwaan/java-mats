@@ -1,5 +1,7 @@
 # Chapter 3 - Basic III
 
+:dango:
+
 * I. [Logics & Conditions](#1-lc)
 * II. [Boolean](#2-bool)
 * III. [if-else](#3-elif)
@@ -265,6 +267,10 @@ if (food.equals("dango") || food.equals("ramen") || food.equals("Tempura")) {
 
 <h2 id="5-qa">V. Q & A</h2>
 
-Q1: TBA
+Q1: ?
 
-A1: TBA
+A1: !
+
+Add more if you may have
+
+

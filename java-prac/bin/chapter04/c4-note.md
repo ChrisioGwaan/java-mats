@@ -1,5 +1,7 @@
 # Chapter 4 - Basic IV
 
+:ramen:
+
 * I. [For Loop](#1-for)
 * II. [While Loop](#2-while)
 * III. [Enumerations](#3-enum)
@@ -42,6 +44,8 @@ int i = 5;
 int result = ++i;  // 'i' is incremented to 6 first, then the value of 'i' (6) is used in the expression.
 // 'result' is 6, and 'i' is 6 after this line.
 ```
+
+However, from experience, you could use any of them in a for loop.
 
 * Additional ways to increase a value by 1, 2, 3, or any other digital numbers
 
@@ -127,7 +131,7 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-The following link might be useful to show the process of the code snippet above.
+The following link will show how the code snippet is doing.
 
 :link: [**Better Visualization**](https://cscircles.cemc.uwaterloo.ca/java_visualize/#code=public+class+ClassNameHere+%7B%0A+++public+static+void+main(String%5B%5D+args)+%7B%0A++++++for+(int+i+%3D+0%3B+i+%3C+10%3B+i%2B%2B)+%7B%0A++++++++++++System.out.println(%22DIAMOND+LEVEL%3A+%22+%2B+i)%3B%0A++++++++%0A++++++++++++for+(int+j+%3D+0%3B+j+%3C+10%3B+j%2B%2B)+%7B%0A++++++++++++++++System.out.print(%22XRAY+%22)%3B%0A++++++++++++%7D%0A++++++++%0A++++++++++++System.out.println(%22%22)%3B%0A+++++++%7D%0A+++%7D%0A%7D&mode=display&curInstr=0)
 
@@ -233,6 +237,6 @@ System.out.println(i); // 10
 
 <h2 id="4-qa">IV. Q & A</h2>
 
-Q1: TBA
+Q1: Waiting~
 
-A1: TBA
+A1: Waiting for the Q1's Waiting~
