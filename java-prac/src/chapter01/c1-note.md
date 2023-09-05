@@ -1,14 +1,14 @@
-# Chapter 1 - Basic I
+# Chapter 1
 
-Extract some important notes and append additional concepts here, hope it could be useful.
+:flags:
 
-* [Output](#1-Output)
+* [Print](#1-Output)
 * [Declaration & Memory Allocation](#2-DMA)
 * [Input](#3-Input)
 * [Maths](#4-Maths)
 * [Reminder](#5-Reminder)
 
-<h2 id="1-Output">Output</h2>
+<h2 id="1-Output">Print</h2>
 
 > Fo sho, hello world!
 
@@ -132,11 +132,11 @@ As you may notice that some specifiers work in all data types, for instance, `%2
 | double    | 8             |
 | bool      | 1             |
 
-No `String` there right? Remember a sentence: **In programming, a String is made up of multiple characters.**
+No `String` there right? That's because, **in programming, a String is made up of multiple characters.**
 
 Did I mention `double` is preferable in Java? Statistically say YES, because the range of `double` is `1.7e-308 to 1.7e+308` and `float` one is `3.4e-038 to 3.4e+038`.
 
-Apparently, `double` is larger than `float`.
+Apparently, `double` has a larger range than `float`.
 
 **Science Notation** yes will be explained here.
 
@@ -218,8 +218,7 @@ import java.lang.Math;
 
 <h2 id="5-Reminder">Reminder</h2>
 
-**Forget about the good practice things while you're doing challenges.** \
-**Try to understand the questions.** \
-**Come up with a quick solution and try that out even if it is wrong.** \
-**Keep debugging, practicing.**
-**Remember, ask questions if you may have, or give me feedback on this, OR feel free to commit your changes at any time (Collaborator privilege)!**
+1. **Ignore good practices only when doing challenges.**
+2. **Understand the question step by step.**
+3. **Quickly come up with a solution and try it out, even if it might be wrong. (Hopefully not)**
+4. **Keep debugging and practicing.**
