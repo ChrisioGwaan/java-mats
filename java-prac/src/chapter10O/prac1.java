@@ -1,5 +1,5 @@
 
-package chapter10_;
+package chapter10O;
 
 import java.io.BufferedReader;
 import java.io.File;
