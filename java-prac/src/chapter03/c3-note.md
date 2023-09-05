@@ -1,4 +1,4 @@
-# Chapter 3 - Basic III
+# Chapter 3
 
 :dango:
 

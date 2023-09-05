@@ -1,17 +1,27 @@
-# Chapter 4 - Basic IV
-
+# Chapter 4
 :ramen:
 
 * I. [For Loop](#1-for)
+  * [Syntax (In Good Practice)](#1-a)
+  * [i++ and ++i](#1-b)
+    * [Post-increment](#1-ba)
+    * [Pre-increment](#1-bb)
+    * [Additional Increment](#1-bc)
+  * [Break](#1-c)
+  * [Continue](#1-d)
+  * [String Iteration](#1-e)
+  * [Nested Loop](#1-f)
+  * [Enhanced For Loop](#1-g)
 * II. [While Loop](#2-while)
+  * [Syntax (In Good Practice)](#2-a)
+  * [Common Multiple-inputs Question](#2-b)
 * III. [Enumerations](#3-enum)
 * IV. [Scope](#4-scope)
 * V. [Q & A](#4-qa)
 
-
 <h2 id="1-for">I. For Loop</h2>
 
-> Syntax (In Good Practice)
+<h3 id="1-a">Syntax (In Good Practice)</h3>
 
 :bookmark_tabs: Check out the following code snippet
 
@@ -25,11 +35,11 @@ for (int i = 0; i < size; i++) {
 * `i < size`: Condition, to limit the value of i cannot exceed the value of size.
 * `++i`: Increase the value of i for iterations.
 
-> `i++` and `++i`
+<h3 id="1-b"><code>i++</code> and <code>++i</code></h3>
 
 They're increment operators used to increase the value of a variable by 1.
 
-* `i++` is **Post-increment**
+<h4 id="1-ba"><code>i++</code> is <b>Post-increment</b></h4>
 
 ```
 int i = 5;
@@ -37,7 +47,7 @@ int result = i++;  // The value of 'i' (5) is used in the expression, then 'i' i
 // 'result' is 5, and 'i' is 6 after this line.
 ```
 
-* `++i` is **Pre-increment**
+<h4 id="1-bb"><code>++i</code> is <b>Pre-increment</b></h4>
 
 ```
 int i = 5;
@@ -47,7 +57,7 @@ int result = ++i;  // 'i' is incremented to 6 first, then the value of 'i' (6) i
 
 However, from experience, you could use any of them in a for loop.
 
-* Additional ways to increase a value by 1, 2, 3, or any other digital numbers
+<h4 id="1-bc">Additional Increment</h4>
 
 ```
 int i = 5;
@@ -59,7 +69,7 @@ int i = 5;
 i += 1;
 ```
 
-> `break`
+<h3 id="1-c"><code>break</code></h3>
 
 :bookmark_tabs: Check out the following code snippet
 
@@ -74,7 +84,7 @@ for (int i = 1; i <= 10; i++) {
 
 The output will be `1 2 3 4 `. Because when `i = 5`, the iteration ends and the loop is terminated.
 
-> `continue`
+<h3 id="1-d"><code>continue</code></h3>
 
 :bookmark_tabs: Check out the following code snippet
 
@@ -89,7 +99,7 @@ for (int i = 1; i <= 5; i++) {
 
 The output will be `1 2 4 5 `. Because when `i = 3`, the `System.out.print(i + " ")` will not be executed and the iteration continues.
 
-> String Iteration
+<h3 id="1-e">String Iteration</h3>
 
 :bulb: Print characters of a String one by one:
 
@@ -115,15 +125,15 @@ for (int i = dessert.length() - 1; i >= 0; i--) {
 System.out.println(rDessert);
 ```
 
-> Nested Loop
+<h3 id="1-f">Nested Loop</h3>
 
 :bookmark_tabs: Check out the following code snippet
 
 ```
-for (int i = 0; i < 10; i++) {
+for (int i = 0; i < 5; i++) {
     System.out.println("DIAMOND LEVEL: " + i);
 
-    for (int j = 0; j < 10; j++) {
+    for (int j = 0; j < 5; j++) {
         System.out.print("XRAY ");
     }
  
@@ -133,11 +143,11 @@ for (int i = 0; i < 10; i++) {
 
 The following link will show how the code snippet is doing.
 
-:link: [**Better Visualization**](https://cscircles.cemc.uwaterloo.ca/java_visualize/#code=public+class+ClassNameHere+%7B%0A+++public+static+void+main(String%5B%5D+args)+%7B%0A++++++for+(int+i+%3D+0%3B+i+%3C+10%3B+i%2B%2B)+%7B%0A++++++++++++System.out.println(%22DIAMOND+LEVEL%3A+%22+%2B+i)%3B%0A++++++++%0A++++++++++++for+(int+j+%3D+0%3B+j+%3C+10%3B+j%2B%2B)+%7B%0A++++++++++++++++System.out.print(%22XRAY+%22)%3B%0A++++++++++++%7D%0A++++++++%0A++++++++++++System.out.println(%22%22)%3B%0A+++++++%7D%0A+++%7D%0A%7D&mode=display&curInstr=0)
+:link: [**Better Visualization**](https://cscircles.cemc.uwaterloo.ca/java_visualize/#code=public+class+ClassNameHere+%7B%0A+++public+static+void+main(String%5B%5D+args)+%7B%0A++++++for+(int+i+%3D+0%3B+i+%3C+5%3B+i%2B%2B)+%7B%0A+++++++++System.out.print(%22DIAMOND+LEVEL%3A+%22+%2B+i)%3B%0A++++++%0A+++++++++for+(int+j+%3D+0%3B+j+%3C+5%3B+j%2B%2B)+%7B%0A++++++++++++System.out.print(%22XRAY+%22)%3B%0A+++++++++%7D%0A+++++++++System.out.println(%22%22)%3B%0A++++++%7D%0A+++%7D%0A%7D&mode=display&curInstr=0)
 
-:bulb: Meanwhile, keep in mind to count how many times the program has been running.  In total, it runs 100 times, right? For `i < 10`, the outer `for` loop has 10 iterations, so does `j` of the inner `for` loop. Thus, it follows a formula of `i` * `y` for the nested loop.
+:bulb: Meanwhile, keep in mind to count how many times the program has been running.  In total, it runs 25 times, right? For `i < 5`, the outer `for` loop has 5 iterations, so does `j` of the inner `for` loop. Thus, it follows a formula of `i` * `y` for the nested loop.
 
-> Enhanced for loop
+<h3 id="1-g">Enhanced for loop</h3>
 
 :bookmark_tabs: Check out the following code snippet
 
@@ -155,7 +165,7 @@ for (char letter : quote.toCharArray()) {
 
 <h2 id="2-while">II. While Loop</h2>
 
-> Syntax (In Good Practice)
+<h3 id="2-a">Syntax (In Good Practice)</h3>
 
 :bookmark_tabs: Check out the following code snippet
 
@@ -167,7 +177,7 @@ while (condition) {
 
 `break` and `continue` still work in `while` loop.
 
-> Common multiple inputs question
+<h3 id="2-b">Common multiple inputs question</h3>
 
 Write a program that takes multiple integer numbers and stops the input by any negative digital number.
 
