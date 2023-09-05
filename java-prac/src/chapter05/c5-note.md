@@ -1,16 +1,19 @@
-# Chapter 5 - Basic V
+# Chapter 5
 
 :ice_cream:
 
 * I. [Array](#1-array)
 * II. [Random Numbers](#2-random)
+  * [Nondeterministic & Deterministic](#2-a)
+  * [Library](#2-b)
+  * [Method](#2-c)
 * III. [Q & A](#3-qa)
 
 <h2 id="1-array">I. Array</h2>
 
 :bulb: To create an array, you have to declare a variable with an array type and then create the array itself.
 
-**Finish all your Day 6 practices on Zybook and send screenshots to me so I can assess your level of knowledge** :smile: :pray:
+> TODO
 
 <h2 id="2-random">II. Random Numbers</h2>
 
