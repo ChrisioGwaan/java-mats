@@ -1,7 +1,5 @@
 # Chapter 2 - Basic II
 
-:gem:
-
 * I. [char](#1-Char)
 * II. [String](#2-String)
 * III. [charAt()](#3-string-char)
@@ -11,8 +9,6 @@
 <h2 id="1-Char">I. Char</h2>
 
 > Input (In details)
-
-:grey_exclamation: I noticed on `Zybook Help`. I think should be better to explain the `charAt()` more in details.
 
 Suppose there are 3 char variables,
 
@@ -183,9 +179,7 @@ char fifthLetter = city.charAt(4); // Store fifth element of city
 
 <h2 id="4-double">IV. double</h2>
 
-:mega: Previously I was thinking of adding `float` at this stage, but it looks like Zybook really forces beginner to start with using `double` as floating-point value. Thus, `float` will be on additional chapter (TBA after chapter 10).
-
-> crucial concepts from double NOT FOUND hehe, so give me quests :question: :star2: :smile: :pray: 
+Currently has no issue with this topic.
 
 <h2 id="5-qa">V. Q & A</h2>
 
@@ -196,5 +190,3 @@ A1: `26` means where it starts, and endindex is **optional**, so if that is quot
 Q2: Is whitespace considered as a character?
 
 A2: Of course. Check [ASCII](https://www.ascii-code.com/) and look for 32-47 (DEC number), those are space and symbols. `0-31`: Non Printable Characters | `32-127`: Printable Characters.
-
-Add more if you may have

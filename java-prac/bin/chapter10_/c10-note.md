@@ -1,7 +1,5 @@
 # Chapter 10 - Intermediate IV
 
-:satisfied:
-
 * I. [I/O Stream](#1-sAl)
 * II. [Q & A](#2-qa)
 
@@ -63,6 +61,6 @@ class test1 {
 
 <h2 id="2-qa">II. Q & A</h2>
 
-Q1: Waiting~
+Q1: TBA
 
-A1: Waiting for the Q1's Waiting~
+A1: TBA

@@ -1,7 +1,5 @@
 # Chapter 5 - Basic V
 
-:ice_cream:
-
 * I. [Array](#1-array)
 * II. [Random Numbers](#2-random)
 * III. [Q & A](#3-qa)
@@ -15,8 +13,6 @@
 <h2 id="2-random">II. Random Numbers</h2>
 
 > Nondeterministic & Deterministic
-
-:zap: This topic is part of Computer Theory, could be useful to talk about _Deterministic_ problem here.
 
 :bulb: Deterministic: An algorithm or automation follows a single, well-defined sequence of steps for a given input. For those algorithms, they are predictable and produce the same input following the same path of execution.
 
@@ -48,6 +44,6 @@ a = random.nextInt(100);
 
 <h2 id="3-qa">IV. Q & A</h2>
 
-Q1: Waiting~
+Q1: TBA
 
-A1: Waiting for the Q1's Waiting~
+A1: TBA
