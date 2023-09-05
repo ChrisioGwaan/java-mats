@@ -10,6 +10,8 @@ Write a program that takes a `double` and prints an approximation of the square 
 
 As your initial guess, you should use $\frac{a}{2}$. Your method should iterate until it gets two consecutive estimates that differ by less than $0.0001$. You can use `Math.abs` to calculate the absolute value of the difference.
 
+- [ ] Finish?
+
 2. `prac2.java`
 
 One way to evaluate $exp(−x^{2})$ is to use the infinite series expansion:
@@ -17,6 +19,8 @@ One way to evaluate $exp(−x^{2})$ is to use the infinite series expansion:
 $$exp(−x^{2}) = 1 - x^{2} + \frac{ x^{4} }{2} - \frac{ x^{6} }{6} + ...$$
 
 The $i$th term in this series is $\frac{ (-1)^{i}x^{2i} }{i!}$. Write a program that takes $x$ and $n$ as inputs and prints the sum of the first $n$ terms of the series. You should not use `factorial` or `pow`.
+
+- [ ] Finish?
 
 3. `prac3.java`
 
@@ -27,3 +31,5 @@ abdest, acknow, acorsy, adempt, adipsy, agnosy, befist, behint, beknow, bijoux, 
 ```
 
 Write a program that takes a String and prints a boolean indicating whether the word is abecedarian.
+
+- [ ] Finish?
