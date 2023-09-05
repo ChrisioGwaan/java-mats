@@ -29,14 +29,14 @@ Do you wish to add more food? No
 
 ----------
 Food name: Dango
-Calories: 500
+Calories: 500.00
 Quantity: 1000
 Total Calories: 500000.00
 IsHealthy: True
 
 ----------
 Food name: Ramen
-Calories: 1200
+Calories: 1200.00
 Quantity: 500
 Total Calories: 600000.00
 IsHealthy: True

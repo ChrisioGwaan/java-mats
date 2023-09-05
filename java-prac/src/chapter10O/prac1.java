@@ -1,4 +1,5 @@
-package chapter10_;
+
+package chapter10O;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -8,7 +9,7 @@ public class prac1 {
     public static void main(String[] args) throws Exception {
 
         // Will be explained in c10-note.md
-        String filePath = System.getProperty("user.dir") + File.separator + "java-prac\\src\\chapter10_\\t1.txt";
+        String filePath = System.getProperty("user.dir") + File.separator + "src\\chapter10_\\t1.txt";
         System.out.println(filePath);
 
         File file = new File(filePath);

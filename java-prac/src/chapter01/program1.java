@@ -1,25 +1,56 @@
 package chapter01;
 
-public class program1 {
+/*
+ * Follow the instructions in the comments to complete the program.
+ * Every time when you finish a step, remove the TODO comment.
+ */
+
+
+/*
+ * TODO: Create a public class named program1
+ * !!! Class name must be strictly the same as the file name, program1
+ */
+ {
     
-    public static void main(String[] args) {
-        // 1. Create an integer variable named int_val and assign it the value 5
+    /*
+     * TODO: Create a public static void main method
+     * !!! main method is the entry point of the program
+     */
+     {
+        // TODO: Declare an integer variable named val1 and assign it the value 12
 
-        // 2. Print the value of int_val using println
+        // TODO: Declare an integer variable named val2 and assign it the value 22
 
-        // 3. Create a double variable named double_val and assign it the value 5.2
+        // TODO: Declare a double variable named val3 and assign it the value 3.14
 
-        // 4. Print the value of double_val using printf, and with \n
+        // TODO: Declare a boolean variable named isGoodDay and assign it the value NOT false
 
-        // 5. Create a boolean variable named boolean_val and assign it the value "not true"
+        // TODO: Declare a char variable named char_val and assign it the value 'E'
 
-        // 6. Print the value of boolean_val using print only, and with \n
+        // TODO: Create a string variable named string_val and assign it the value "why are you here learning java??" with the char_val in front of it
 
-        // 7. Create a char variable named char_val and assign it the value 'a'
+        /*
+         * TODO: Use printf to print out the following facts: (call Math.PI to get the specific value of pi)
+         * Your luncky number is 12, and your favorite number is 22
+         * The value of pi is approximately 3.14, specifically 3.1415926
+         * Is today a good day? true
+         * Letter A is the first letter in the alphabet.
+         * Anyway, why are you here learning java??
+         */
 
-        // 8. Create a string variable named string_val and assign it the value " program" with the char_val in front of it
-
-        // 10. Print the value of string_val using println
+        /*
+         * TODO: Use printf to print out the above facts again but with additional formats:
+         * 1. should print out the octal value of val1 and the hex value of val2
+         * Your luncky number is 14, and your favorite number is 16
+         * 2. should print out the value of val3 with 4 decimal places and the value of Math.PI with 12 decimal places
+         * The value of pi is approximately 3.14, specifically 3.141592653590
+         * 3. keep the same
+         * Is today a good day? true
+         * 4. should print out the value of char_val as a ASCII number
+         * Letter 65 is the first letter in the alphabet.
+         * 5. should print out the string_val in upper case
+         * Anyway, WHY ARE YOU HERE LEARNING JAVA??
+         */
 
     }
 }

@@ -1,22 +1,36 @@
 # Tips
 
-## Useful Tools in VS Code
+* [Dev Environment Setup for Java](#a1)
+* [Useful Tools in VS Code](#b1)
+  * [Markdown File Preview](#b1b)
+* [Java Coding Style](#c1)
+  * [Space Indentation](#c1c)
 
-### Markdown File Preview
+<h2 id="a1">Dev Environment Setup for Java</h2>
+
+* [JAVA RUNTIME](https://www.java.com/en/)
+* [JAVA JDK 1.8](https://www.oracle.com/au/java/technologies/javase/javase8-archive-downloads.html)
+* [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+* [Language Support for Java](https://marketplace.visualstudio.com/items?itemName=redhat.java)
+* [Java Language Support](https://marketplace.visualstudio.com/items?itemName=georgewfraser.vscode-javac)
+
+<h2 id="b1">Useful Tools in VS Code</h2>
+
+<h3 id="b1b">Markdown File Preview</h3>
 
 VS Code provides markdown preview features. However, some features, such as Emojis, Maths LaTex etc, may not be shown in vs code preview. It's suggested that reading markdown on GitHub Website is way better.
 
 ![](lib/img/Screenshot%202023-08-03%20083420.png)
 
-## Java Coding Style
+<h2 id="c1">Java Coding Style</h2>
 
-### Space Indentation
+<h3 id="c1c">Space Indentation</h3>
 
 * **Indentation**, a blank space between a margin and the beginning of a line of text.
 
 * **Scope**, refers to the field of a program where a particular variable or identifier is accessible or valid.
 
-For the below example, you can assume `|` is a margin.
+For the below example, you can assume `|` as a margin.
 
 ```
 1  |package folder1;

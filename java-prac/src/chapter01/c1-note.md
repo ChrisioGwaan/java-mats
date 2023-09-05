@@ -1,16 +1,29 @@
-# Chapter 1 - Basic I
+# Chapter 1
 
-Extract some important notes and append additional concepts here, hope it could be useful.
+:flags:
 
-* [Output](#1-Output)
+* [Print](#1-Output)
+  * [Fo sho, hello world!](#1-a)
+  * [Short-cut](#1-b)
+  * [Printf specifiers](#1-c)
+  * [Int specifiers](#1-d)
+  * [Float specifiers](#1-e)
+  * [String specifiers](#1-f)
 * [Declaration & Memory Allocation](#2-DMA)
+  * [Sizes of common data types](#2-a)
+  * [Initialisation (in details)](#2-b)
 * [Input](#3-Input)
+  * [Import the library first](#3-a)
+  * [Create a Scanner object](#3-b)
+  * [Methods](#3-c)
 * [Maths](#4-Maths)
+  * [Import the library first](#4-a)
+  * [Commonly Used Methods](#4-b)
 * [Reminder](#5-Reminder)
 
-<h2 id="1-Output">Output</h2>
+<h2 id="1-Output">Print</h2>
 
-> Fo sho, hello world!
+<h3 id="1-a">Fo sho, hello world!</h3>
 
 1. Print a specified string and appends a newline character at the end.
 
@@ -57,11 +70,11 @@ logger.info("JAVA ?!");
 System.err.println("404 NOT FOUND"); // Just an example
 ```
 
-> Short-cut for `System.out.println()` on VS Code
+<h3 id="1-b">Short-cut for <code>System.out.println()</code> on VS Code</h3>
 
 * Type `sysout` and press ***tab***
 
-> Printf specifiers
+<h3 id="1-c">Printf specifiers</h3>
 
 | Specifier   | Data Type     |
 |-------------|---------------|
@@ -75,7 +88,7 @@ System.err.println("404 NOT FOUND"); // Just an example
 | `%%`        | Preserve percentage sign |
 | `%n`        | New line |
 
-> Additional Printf specifiers - **int**
+<h3 id="1-d">Additional Printf specifiers - <b>int</b></h3>
 
 ```
 int population = 8500000; // EXAMPLE
@@ -90,7 +103,7 @@ int population = 8500000; // EXAMPLE
 | `%o`       | `40331440`     | Octal |
 | `%x`       | `81b320`       | Hexadecimal |
 
-> Additional Printf specifiers - **int**
+<h3 id="1-e">Additional Printf specifiers - <b>float</b></h3>
 
 ```
 double pearls_sell = 15.2; // EXAMPLE, in Java, mostly use double type instead of float
@@ -100,7 +113,7 @@ double pearls_sell = 15.2; // EXAMPLE, in Java, mostly use double type instead o
 |-----------|----------------|------------------------------|
 | `%.4f`    | `15.2000`      | 4 decimal places             |
 
-> Additional Printf specifiers - **String**
+<h3 id="1-f">Additional Printf specifiers - <b>String</b></h3>
 
 ```
 String name = "dango" // EXAMPLE
@@ -120,7 +133,7 @@ As you may notice that some specifiers work in all data types, for instance, `%2
 
 <h2 id="2-DMA">Declaration & Memory Allocation</h2>
 
-> Sizes of common variable types
+<h3 id="2-a">Sizes of common data types</h3>
 
 | Data Type | Size in Bytes |
 |-----------|---------------|
@@ -132,11 +145,11 @@ As you may notice that some specifiers work in all data types, for instance, `%2
 | double    | 8             |
 | bool      | 1             |
 
-No `String` there right? Remember a sentence: **In programming, a String is made up of multiple characters.**
+No `String` there right? That's because, **in programming, a String is made up of multiple characters.**
 
 Did I mention `double` is preferable in Java? Statistically say YES, because the range of `double` is `1.7e-308 to 1.7e+308` and `float` one is `3.4e-038 to 3.4e+038`.
 
-Apparently, `double` is larger than `float`.
+Apparently, `double` has a larger range than `float`.
 
 **Science Notation** yes will be explained here.
 
@@ -148,7 +161,7 @@ How about `1.5e-3`, it'll be `0.0015`
 
 $$1.5 * 10^{-3}$$
 
-> Initialisation (in details)
+<h3 id="2-b">Initialisation (in details)</h3>
 
 Look at the following code snippet:
 ```
@@ -168,13 +181,13 @@ In both cases, on most systems, an `int` typically occupies 4 bytes of memory. T
 
 <h2 id="3-Input">Input</h2>
 
-> Import the library first
+<h3 id="3-a">Import the library first</h3>
 
 ```
 import java.util.Scanner;
 ```
 
-> Create a Scanner object
+<h3 id="3-b">Create a Scanner object</h3>
 
 ```
 Scanner scnr = new Scanner(System.in);
@@ -182,7 +195,7 @@ Scanner scnr = new Scanner(System.in);
 
 The `scnr` represents as an **instance** of the `Scanner` class.
 
-> Methods
+<h3 id="3-c">Methods</h3>
 
 * `scnr.nextInt()`, integer input
 * `scnr.nextDouble()`, double input
@@ -200,13 +213,13 @@ scnr.close();
 
 <h2 id="4-Maths">Maths</h2>
 
-> Import the library first
+<h3 id="4-a">Import the library first</h3>
 
 ```
 import java.lang.Math;
 ```
 
-> Commonly Used Methods
+<h3 id="4-b">Commonly Used Methods</h3>
 
 * `Math.sqrt()`
 * `Math.sin()`
@@ -218,8 +231,7 @@ import java.lang.Math;
 
 <h2 id="5-Reminder">Reminder</h2>
 
-**Forget about the good practice things while you're doing challenges.** \
-**Try to understand the questions.** \
-**Come up with a quick solution and try that out even if it is wrong.** \
-**Keep debugging, practicing.**
-**Remember, ask questions if you may have, or give me feedback on this, OR feel free to commit your changes at any time (Collaborator privilege)!**
+1. **Ignore good practices only when doing challenges.**
+2. **Understand the question step by step.**
+3. **Quickly come up with a solution and try it out, even if it might be wrong. (Hopefully not)**
+4. **Keep debugging and practicing.**
