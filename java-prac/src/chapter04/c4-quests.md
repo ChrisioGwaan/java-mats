@@ -4,7 +4,7 @@ Let’s say you are given a number, $a$, and you want to find its square root. O
 
 $$x_{1} = \frac{(x_{0} + \frac{ a }{ x_{0} })}{2}$$
 
-For example, if we want to find the square root of $9$, and we start with $x_{0} = 6$, then $x_{1} = \frac{(6 + 9/6)}{2} = 3.75$, which is closer. We can repeat the procedure, using $x_{1}$ to calculate $x_{2}$, and so on. In this case, $x_{2} = 3.075$ and $x_{3} = 3.00091$. So the repetition converges quickly on the correct answer.
+For example, if we want to find the square root of $9$, and we start with $x_{0} = 6$, then $x_{1} = \frac{(6 + \frac{9}{6})}{2} = 3.75$, which is closer. We can repeat the procedure, using $x_{1}$ to calculate $x_{2}$, and so on. In this case, $x_{2} = 3.075$ and $x_{3} = 3.00091$. So the repetition converges quickly on the correct answer.
 
 Write a program that takes a `double` and prints an approximation of the square root of the parameter, using this technique. You should not use `Math.sqrt`.
 
