@@ -1,5 +1,9 @@
 package chapter06.oosd;
 
+/*
+ * The ContractEmployee subclass
+ */
+
 class ContractEmployee extends Employee {
     private double monthlySalary;
 

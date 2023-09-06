@@ -1,5 +1,8 @@
 package chapter06.oosd;
 
+/*
+ * The CommissionEmployee subclass
+ */
 
 class CommissionEmployee extends Employee {
     private double baseSalary;

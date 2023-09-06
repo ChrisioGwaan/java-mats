@@ -1,5 +1,9 @@
 package chapter06.oosd;
 
+/*
+ * The CasualEmployee subclass
+ */
+
 class CasualEmployee extends Employee {
     private double hourlySalary;
     private double overtimeRate;
