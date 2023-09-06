@@ -1,4 +1,4 @@
-# Chapter 8 - Intermediate II
+# Chapter 8
 
 :hibiscus: :four_leaf_clover:
 

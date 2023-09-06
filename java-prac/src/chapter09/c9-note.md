@@ -1,4 +1,4 @@
-# Chapter 9 - Intermediate III
+# Chapter 9
 
 :satisfied:
 
