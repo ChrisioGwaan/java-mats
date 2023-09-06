@@ -17,7 +17,7 @@
 
 <h2 id="2-random">II. Random Numbers</h2>
 
-> Nondeterministic & Deterministic
+<h3 id="2-a">Nondeterministic & Deterministic</h3>
 
 :zap: This topic is part of Computer Theory, could be useful to talk about _Deterministic_ problem here.
 
@@ -29,13 +29,13 @@ Making a program nondeterministic turns out to be hard, that's because it's impo
 
 Tips: Deep Learning belongs to Machine Learning, ML belongs to AI. So AI has the biggest range of all.
 
-> Library
+<h3 id="2-b">Library</h3>
 
 ```
 import java.util.Random;
 ```
 
-> Method
+<h3 id="2-c">Method</h3>
 
 ```
 Random random = new Random();
