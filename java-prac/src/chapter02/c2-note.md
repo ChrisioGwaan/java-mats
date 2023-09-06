@@ -1,16 +1,21 @@
-# Chapter 2 - Basic II
+# Chapter 2
 
 :gem:
 
 * I. [char](#1-Char)
+  * [Input (In details)](#1-a)
 * II. [String](#2-String)
+  * [Important Note](#2-a)
+  * [indexOf()](#2-b)
+  * [substring()](#2-c)
 * III. [charAt()](#3-string-char)
+  * [charAt() with String](#3-a)
 * IV. [double](#4-double)
 * V. [Q & A](#5-qa)
 
 <h2 id="1-Char">I. Char</h2>
 
-> Input (In details)
+<h3 id="1-a">Input (In details)</h3>
 
 :grey_exclamation: I noticed on `Zybook Help`. I think should be better to explain the `charAt()` more in details.
 
@@ -82,9 +87,9 @@ String word = "Hello";
 
 <h2 id="2-String">II. String (In details)</h2>
 
-> :rotating_light: IMP NOTE
+<h3 id="2-a">Important Note</h3>
 
-Review the animation on 2.12.7 `Mixing next() and nextLine()`.
+Review the animation on Z-2.12.7 `Mixing next() and nextLine()`.
 
 :bookmark_tabs: Check out the following code snippet
 
@@ -134,7 +139,7 @@ System.out.println("Year: " + year);
 System.out.println("Item name: " + itemName);
 ```
 
-> Methods - `indexOf()`
+<h3 id="2-b">Methods - <code>indexOf()</code></h3>
 
 :bulb: Explain
 
@@ -154,7 +159,7 @@ int index1 = quote.indexOf('e'); // 2
 int index2 = quote.indexOf('e', 17); // 2, because it starts to search from index 5 
 ```
 
-> Methods - `substring()`
+<h3 id="2-c">Methods - <code>substring()</code></h3>
 
 :bulb: Explain
 

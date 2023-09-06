@@ -1,30 +1,41 @@
-# Chapter 3 - Basic III
+# Chapter 3
 
 :dango:
 
 * I. [Logics & Conditions](#1-lc)
+  * [AND &&](#1-a)
+  * [OR ||](#1-b)
+  * [Relational Operators](#1-c)
+  * [Comparing String (in details - Memory Allocation)](#1-d)
 * II. [Boolean](#2-bool)
+  * [Return Type](#2-a)
+  * [Declaration](#2-b)
 * III. [if-else](#3-elif)
+  * [Syntax (In Good Practice)](#3-a)
+  * [Common Logical Issue](#3-b)
+  * [Short Hand Form](#3-c)
 * IV. [Switch](#4-switch)
+  * [Syntax (In Good Practice)](#4-a)
+  * [Additional Cases](#4-b)
 * V. [Q & A](#5-qa)
 
 <h2 id="1-lc">I. Logics & Conditions</h2>
 
-> AND `&&`
+<h3 id="1-a">AND <code>&&</code></h3>
 
 |     | T   | F   |
 | --- | --- | --- |
 | T   | T   | F   |
 | F   | F   | F   |
 
-> OR `||`
+<h3 id="1-b">OR <code>||</code></h3>
 
 |     | T   | F   |
 | --- | --- | --- |
 | T   | T   | T   |
 | F   | T   | F   |
 
-> Relational Operators
+<h3 id="1-c">Relational Operators</h3>
 
 **(for integers or floating-point values, only comparing the values)**
 
@@ -37,7 +48,7 @@
 * `==`, equal to
 * `!=`, not equal to
 
-> Comparing String (in details - Memory Allocation)
+<h3 id="1-d">Comparing String (in details - Memory Allocation)</h3>
 
 * Using `==` operator
 
@@ -69,11 +80,11 @@ String new_str1 = new String("Late Night Snacks");
 
 <h2 id="2-bool">II. Boolean</h2>
 
-> Data type
+<h3 id="2-a">Return type</h3>
 
 :bulb: The result of a relational operator is one of two special values: `true` or `false`, which belongs to the data type `boolean`.
 
-> Declaration
+<h3 id="2-b">Declaration</h3>
 
 :bookmark_tabs: Check out the following code snippet
 
@@ -88,7 +99,7 @@ boolean result2 = (5 < 8 && 9 > 10 || 7 == 12); // EXAMPLE, it'll be false
 
 <h2 id="3-elif">III. if-else</h2>
 
-> Syntax (In Good Practice)
+<h3 id="3-a">Syntax (In Good Practice)</h3>
 
 :bookmark_tabs: Check out the following code snippet
 
@@ -104,7 +115,7 @@ if (condition1) {
 
 `if-else` syntax in Java is pretty similar to other languages like C/C++, C# etc.
 
-> Common Logical Issue
+<h3 id="3-b">Common Logical Issue</h3>
 
 :bookmark_tabs: Check out the following code snippet
 
@@ -163,7 +174,7 @@ if (!LNS) { // !false = true, which means it will be always true as long as the 
 
 :bulb: With this solution, all conditions will be checked. You might notice the `!LNS`. The `if-else` parentheses inside must be a condition and the results is either false or true. `LNS = false` is declared as default, by using `!LNS` can satisfy the first `if` and continue to do other operations.
 
-> Short Hand Form
+<h3 id="3-c">Short Hand Form</h3>
 
 :grey_exclamation: Before explaning that, I personally not recommend this to programming beginners. So write `if-else` in a normal form for now and if there's one day that you think you are familiar with coding it, you could start getting used to the short hand form.
 
@@ -201,7 +212,7 @@ Looks the same right.
 
 <h2 id="4-switch">IV. Switch</h2>
 
-> Syntax (In Good Practice)
+<h3 id="4-a">Syntax (In Good Practice)</h3>
 
 :bookmark_tabs: Check out the following code snippet
 
@@ -236,7 +247,7 @@ if (number == 1) {
 }
 ```
 
-> multiple cases
+<h3 id="4-b">Additional Cases</h3>
 
 ```
 ...

@@ -1,16 +1,33 @@
-# Chapter 6 - Basic VI
+# Chapter 6
 
 :tea:
 
 * I. [Class](#1-class)
+  * [Field Initialisation](#1-a)
+  * [Default Constructor (without any arguments)](#1-b)
+  * [Implicit Parameter - this](#1-c)
+  * [Overload Constructor](#1-d)
 * II. [Method](#2-Method)
 * III. [ArrayList](#3-ArrayList)
+  * [Primitives & References type](#3-a)
+  * [Declaration](#3-b)
+  * [Common ArrayList methods](#3-c)
+    * [add(element)](#3-ca)
+    * [add(index, element)](#3-cb)
+    * [get(index)](#3-cc)
+    * [set(index, element)](#3-cd)
+    * [size()](#3-ce)
+    * [clear()](#3-cf)
+  * [ArrayList vs Array](#3-d)
 * IV. [Inheritance](#4-inheritance)
+  * [UML Class Diagram](#4-a)
+  * [Example of using inheritance](#4-b)
+  * [Completed Implementation with UML Class Diagram](#4-c)
 * V. [Q & A](#5-qa)
 
 <h2 id="1-class">I. Class</h2>
 
-> Field Initialisation
+<h3 id="1-a">Field Initialisation</h3>
 
 ```
 class Car {
@@ -24,7 +41,7 @@ class Car {
 }
 ```
 
-> Default Constructor (without any arguments)
+<h3 id="1-b">Default Constructor (without any arguments)</h3>
 
 ```
 class Car {
@@ -46,13 +63,13 @@ class Car {
 
 You may wonder how default constructor works in main program. We usually initialise  an object, for example, a class called `City`. If we want to use the class, we need to declare an instance, `City melbourne = new City();`. `melbourne` is an instance, and `City()` is calling a default constructor from `City` class.
 
-> Implicit Parameter - `this`
+<h3 id="1-c">Implicit Parameter - <code>this</code></h3>
 
 Using `this` allows you to access class members. It's pretty necessary when field members and parameters share the same name.
 
 Even when field members and parameters do not share the same name, it is recommended to use `this` for accessing class members.
 
-> Overload Constructor
+<h3 id="1-d">Overload Constructor</h3>
 
 In `Food.java` for example,
 
@@ -101,7 +118,7 @@ TBD
 
 <h2 id="3-ArrayList">III. ArrayList</h2>
 
-> Primitives & References type
+<h3 id="3-a">Primitives & References type</h3>
 
 `int`, `double`, `char`, and `boolean` are primitive types.
 
@@ -116,7 +133,7 @@ TBD
 | Boolean   | boolean   |
 | Long      | long      |
 
-> Declaration
+<h3 id="3-b">Declaration</h3>
 
 ```
 ArrayList<Object> vals = new ArrayList<Object>()
@@ -126,13 +143,13 @@ When declaring an ArrayList, creates reference variable `vals` and that refers t
 
 As mentioned previously, reference is also known as an object. Primitive type is not allowed.
 
-> Common ArrayList methods
+<h3 id="3-c">Common ArrayList methods</h3>
 
 ```
 ArrayList<Integer> list = new ArrayList<Integer>();
 ```
 
-1. `add(element)`
+<h4 id="3-ca"><code>add(element)</code></h4>
 
 Appends the specified element to the end of this list.
 
@@ -143,7 +160,7 @@ list.add(2);
 // 1, 2
 ```
 
-2. `add(index, element)`
+<h4 id="3-cb"><code>add(index, element)</code></h4>
 
 Inserts the specified element at the specified position in this list.
 
@@ -155,7 +172,7 @@ list.add(1, 5); // Insert val 5 into index 1
 // 1, 5, 2
 ```
 
-3. `get(index)`
+<h4 id="3-cc"><code>get(index)</code></h4>
 
 Returns the element at the specified position in this list.
 
@@ -168,7 +185,7 @@ a = list.get(1)
 // a stores the value of 2, from index 1 in arraylist
 ```
 
-4. `set(index, element)`
+<h4 id="3-cd"><code>set(index, element)</code></h4>
 
 Replaces the element at the specified position in this list with the specified element.
 
@@ -181,7 +198,7 @@ list.set(1, 12)
 // Replaces index 1 val into 12
 ```
 
-5. `size()`
+<h4 id="3-ce"><code>size()</code></h4>
 
 Returns the number of elements in this list.
 
@@ -192,7 +209,7 @@ list.add(7);
 System.out.println(list.size()); // print 2
 ```
 
-6. `clear()`
+<h4 id="3-cf"><code>clear()</code></h4>
 
 Removes all of the elements from this list.
 
@@ -207,7 +224,7 @@ list.clear();
 // null
 ```
 
-> ArrayList vs Array
+<h3 id="3-d">ArrayList vs Array</h3>
 
 | Array                       | ArrayList        |
 |-----------------------------|------------------|
@@ -219,7 +236,7 @@ Basically, **Array** needs a specified size to be declared, but **ArrayList** do
 
 <h2 id="4-inheritance">IV. Inheritance</h2>
 
-> UML Class Diagram
+<h3 id="4-a">UML Class Diagram</h3>
 
 * Object explaination
 
@@ -247,7 +264,7 @@ Basically, **Array** needs a specified size to be declared, but **ArrayList** do
 
 ![](/java-prac/lib/img/perspective-of-class-diagram.png)
 
-> Example of using inheritance
+<h3 id="4-b">Example of using inheritance</h3>
 
 ![](/java-prac/lib/img/ex1.jpeg)
 
@@ -257,7 +274,7 @@ When creating instances of subclasses, you **can** also use their main class met
 
 On the other hand, you **cannot** use subclasses methods if an instance is declared and refers to the main class.
 
-> Completed Implementation UML Class Diagram of the example
+<h3 id="4-c">Completed Implementation with UML Class Diagram</h3>
 
 ![](/java-prac/lib/img/ex2.jpeg)
 
@@ -273,11 +290,11 @@ Code has been provided in `oosd` folder. Those are conceptional code and you don
 
 <h2 id="5-qa">V. Q & A</h2>
 
-Q1: How do classes actually work with `ArrayList`?
+Q1: How do **class** and **ArrayList** actually work together?
 
 A1:
 
-First, we start from looking at a simple `ArrayList`
+First, we start from looking at a simple **ArrayList**
 
 ```
 ArrayList<Integer> example1 = new ArrayList<Integer>();
@@ -296,7 +313,7 @@ In memory it would look like
 [3]: 1222
 ```
 
-On the other hand, when the data type of an ArrayList is a class,
+On the other hand, when the data type of an **ArrayList** is a **class**,
 
 ```
 ArrayList<Food> foodlist = ArrayList<Food>();
@@ -321,9 +338,9 @@ In memory:
 ```
 
 Since each element contains multiple variables belongs to Food class,
-that's why we need an instance to access them
+that's why we need an instance to access them.
 
-Assume the instance is exam1, `exam1.getFoodName();` in Food class getter method
+Assume the instance is exam1, `exam1.getFoodName();` to get the food name in Food class getter method.
 
 
 Q2: ?

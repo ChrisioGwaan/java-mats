@@ -1,12 +1,12 @@
-# Chapter 7 - Intermediate I
+# Chapter 7
 
 :tulip: :cherry_blossom:
 
 * I. [Algorithm & Analysis](#1-ac)
-  * I-I. [O Notation](#1a)
-  * I-II. [Ω Notation](#1b)
-  * I-III. [Θ Notation](#1c)
-  * I-IV. [Complexity Analysis](#1d)
+  * [O Notation](#1a)
+  * [Ω Notation](#1b)
+  * [Θ Notation](#1c)
+  * [Complexity Analysis](#1d)
 * II. [Coding Example - Analysis](#2-ca)
 * III. [Q & A](#3-qa)
 
@@ -14,19 +14,19 @@
 
 **Algorithm**, is a step-by-step set of instructions or a well-defined procedure for solving a particular problem or accomplishing a specific task.
 
-<h3 id="1a">O Notation [Compulsory]</h3>
+<h3 id="1a">O Notation | <b>Compulsory</b></h3>
 
 **Big O notation**, represents the **upper** bound or **worst-case** time complexity of an algorithm. It provides an upper limit on the number of operations an algorithm will take as a function of its input size.
 
-<h3 id="1b">Ω Notation - [Optional]</h3>
+<h3 id="1b">Ω Notation | <b>Optional</b></h3>
 
 **Omega notation**, represents the **lower** bound or **best-case** time complexity of an algorithm. It provides a lower limit on the number of operations an algorithm will take as a function of its input size.
 
-<h3 id="1c">Θ Notation - [Optional]</h3>
+<h3 id="1c">Θ Notation | <b>Optional</b></h3>
 
 **Theta notation**, represents **BOTH** the upper and lower bounds of an algorithm's time complexity. It provides a tight range within which the actual number of operations will fall as a function of its input size.
 
-<h3 id="1d">O Notation - Complexity Chart [Compulsory]</h3>
+<h3 id="1d">O Notation - Complexity Chart | <b>Compulsory</b></h3>
 
 | Complexity    | Name              | Description                                                               |
 |---------------|-------------------|---------------------------------------------------------------------------|

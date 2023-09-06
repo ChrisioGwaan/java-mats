@@ -1,5 +1,9 @@
 package chapter06.oosd;
 
+/*
+ * The Employee class
+ */
+
 // @Entity
 public class Employee implements CalculateStrategy {
 
