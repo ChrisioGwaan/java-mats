@@ -182,7 +182,7 @@ You can also use `java.util.Arrays` to copy an array. It provides a method calle
 int[] b = Arrays.copyOf(a, a.length);
 ```
 
-<h4 id="1-bi">Array Enhanced Iteration</h4>
+<h4 id="1-bi">Array Enhanced Iteration <a href="#top">&#128205;</a></h4>
 
 ```
 // Create a variable `val` to store the value of each element in the array.
@@ -191,8 +191,6 @@ for (int val : a) {
     System.out.println(a);
 }
 ```
-
-:busstop: [***Back to the top***](#top)
 
 <h2 id="2-random">II. Random Numbers</h2>
 
