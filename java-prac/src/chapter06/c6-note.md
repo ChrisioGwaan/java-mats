@@ -22,7 +22,7 @@
 * IV. [Inheritance](#4-inheritance)
   * [UML Class Diagram](#4-a)
   * [Example of using inheritance](#4-b)
-  * [Completed Implementation UML Class Diagram of the example](#4-c)
+  * [Completed Implementation with UML Class Diagram](#4-c)
 * V. [Q & A](#5-qa)
 
 <h2 id="1-class">I. Class</h2>
@@ -274,7 +274,7 @@ When creating instances of subclasses, you **can** also use their main class met
 
 On the other hand, you **cannot** use subclasses methods if an instance is declared and refers to the main class.
 
-<h3 id="4-c">Completed Implementation UML Class Diagram of the example</h3>
+<h3 id="4-c">Completed Implementation with UML Class Diagram</h3>
 
 ![](/java-prac/lib/img/ex2.jpeg)
 
@@ -290,11 +290,11 @@ Code has been provided in `oosd` folder. Those are conceptional code and you don
 
 <h2 id="5-qa">V. Q & A</h2>
 
-Q1: How do classes actually work with `ArrayList`?
+Q1: How do **class** and **ArrayList** actually work together?
 
 A1:
 
-First, we start from looking at a simple `ArrayList`
+First, we start from looking at a simple **ArrayList**
 
 ```
 ArrayList<Integer> example1 = new ArrayList<Integer>();
@@ -313,7 +313,7 @@ In memory it would look like
 [3]: 1222
 ```
 
-On the other hand, when the data type of an ArrayList is a class,
+On the other hand, when the data type of an **ArrayList** is a **class**,
 
 ```
 ArrayList<Food> foodlist = ArrayList<Food>();
@@ -338,9 +338,9 @@ In memory:
 ```
 
 Since each element contains multiple variables belongs to Food class,
-that's why we need an instance to access them
+that's why we need an instance to access them.
 
-Assume the instance is exam1, `exam1.getFoodName();` in Food class getter method
+Assume the instance is exam1, `exam1.getFoodName();` to get the food name in Food class getter method.
 
 
 Q2: ?
