@@ -3,6 +3,20 @@
 :ice_cream:
 
 * I. [Array](#1-array)
+  * [Creation](#1-a)
+    * [Without Initialisation](#1-aa)
+    * [0 Size of an Array](#1-ab)
+    * [Initialisation](#1-ac)
+  * [Access](#1-b)
+    * [Index](#1-ba)
+    * [Assignment](#1-bb)
+    * [Selection](#1-bc)
+    * [Elements Update](#1-bd)
+    * [Array Length](#1-be)
+    * [Array Iteration](#1-bf)
+    * [Array Display](#1-bg)
+    * [Array Copy](#1-bh)
+    * [Array Enhanced Iteration](#1-bi)
 * II. [Random Numbers](#2-random)
   * [Nondeterministic & Deterministic](#2-a)
   * [Library](#2-b)
@@ -11,9 +25,172 @@
 
 <h2 id="1-array">I. Array</h2>
 
-:bulb: To create an array, you have to declare a variable with an array type and then create the array itself.
+* **Array** is a sequence of values.
+* In Java, all the values in an array **must** have the same type.
+* The length of an array is established when the array is created. After creation, the length is **fixed**.
+* All the values in an array are called **elements**.
 
-> TODO
+<h3 id="1-a">Arrays Creation</h3>
+
+<h4 id="1-aa">Without Initialisation</h4>
+
+The following code declares 4 arrays only, but not create them yet.
+
+```
+int[] a;
+doulbe[] b;
+char[] c;
+boolean[] d;
+// etc...
+```
+
+In order to create an array, we need to use the `new` operator. The `new` operator allocates memory for the array, and automatically initializes all its elements to zero.
+
+```
+a = new int[10];
+b = new double[100];
+c = new char[1000];
+d = new boolean[10000];
+// etc..
+```
+
+Fo sho, you can also declare and create an array in one line.
+
+```
+int[] a = new int[10];
+double[] b = new double[100];
+char[] c = new char[1000];
+boolean[] d = new boolean[10000];
+// etc...
+```
+
+For the size of an array, you can use an **integer** variable or an **integer** expression, and make sure the value is **non-negative**. Otherwise, you will get a `NegativeArraySizeException`. In general, `array.length` $\geq 0$.
+
+<h4 id="1-ab">0 Size of an Array</h4>
+
+```
+int[] emptyArray = new int[0];
+```
+
+Java allocates memory for the array because of the `new` operator, but it doesn't allocate memory for the elements. So it's not a good idea to access the elements of an empty array. If you do, you will get a `ArrayIndexOutOfBoundsException` because the index range for this array will be from $0$ to $-1$.
+
+<h4 id="1-ac">Initialisation</h4>
+
+You can also initialise an array with a comma-separated sequence of elements enclosed in braces.
+
+```
+int[] a = {1, 99};
+double[] b = {1.0, 99.4, 32.3};
+char[] c = {'h', 'e', 'l', 'l', 'o'};
+boolean[] d = {true, false, true, false};
+// etc...
+```
+
+<h3 id="1-b">Array Access</h3>
+
+Suppose we have an array as follows.
+
+```
+int[] a = mew int[5];
+```
+
+<h4 id="1-ba">Index</h4>
+
+The elements in an array are numbered from $0$ to $n-1$, where $n$ is the length of the array. The first element is at index $0$ (aka **zeroth**), and the last element is at index $n-1$.
+
+<h4 id="1-bb">Assignment</h4>
+
+```
+a[0] = 1;
+a[1] = 2;
+a[2] = 3;
+a[3] = 4;
+a[4] = 5;
+```
+
+<h4 id="1-bc">Selection</h4>
+
+```
+System.out.println(a[0]); // 1
+```
+
+<h4 id="1-bd">Elements Update</h4>
+
+```
+a[0] = 99; // 1 -> 99
+a[1] = a[0] + 1; // 2 -> 100
+a[2]++; // 3 -> 4
+a[3] += 2; // 4 -> 6
+a[4] -= 3; // 5 -> 2
+```
+
+<h4 id="1-be">Array Length</h4>
+
+```
+System.out.println(a.length); // 5
+```
+
+<h4 id="1-bf">Array Iteration</h4>
+
+```
+for (int i = 0; i < a.length; i++) {
+    System.out.println(a[i]);
+}
+```
+
+<h4 id="1-bg">Array Display</h4>
+
+Sometimes, we may want to display an array, but you would get something unexpected. Directly print an array will get the following result, which is the memory **address** of the array. 
+
+`[` means array, `I` means integer, `@` means at, and `15db9742` is the memory address of the array.
+
+```
+System.out.println(a); // [I@15db9742
+```
+
+Of course you can print the elements using loops as [Array Iteration](#1-bf) above.
+
+Additionally, you can use the `Arrays` class to display an array. In Java library, `java.util.Arrays` provides a method called `toString` to display an array.
+
+```
+System.out.println(Arrays.toString(a)); // [99, 100, 4, 6, 2]
+```
+
+<h4 id="1-bh">Array Copy</h4>
+
+Array variables contain **references** to arrays. When you assign an array variable to another, you are copying the reference. So the two variables refer to the same array. If you modify one, the other changes as well.
+
+Suppose we have another array `b` that copies array `a` as follows.
+
+```
+int[] b = a; // Use the same memory address as `a`
+// Which means if you make changes on `b`, `a` will change as well.
+```
+
+If you want to copy an array not just the **reference**, you can do as follows.
+
+```
+int[] b = new int[a.length];
+for (int i = 0; i < a.length; i++) {
+    b[i] = a[i];
+}
+```
+
+You can also use `java.util.Arrays` to copy an array. It provides a method called `copyOf`.
+
+```
+int[] b = Arrays.copyOf(a, a.length);
+```
+
+<h4 id="1-bi">Array Enhanced Iteration</h4>
+
+```
+// Create a variable `val` to store the value of each element in the array.
+// Data type should be also the same as the array.
+for (int val : a) {
+    System.out.println(a);
+}
+```
 
 <h2 id="2-random">II. Random Numbers</h2>
 
