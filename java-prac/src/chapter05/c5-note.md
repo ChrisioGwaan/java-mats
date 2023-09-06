@@ -1,4 +1,4 @@
-# Chapter 5
+<h1 id="top">Chapter 5</h1>
 
 :ice_cream:
 
@@ -192,6 +192,8 @@ for (int val : a) {
 }
 ```
 
+:busstop: [***Back to the top***](#top)
+
 <h2 id="2-random">II. Random Numbers</h2>
 
 <h3 id="2-a">Nondeterministic & Deterministic</h3>
@@ -226,8 +228,12 @@ a = random.nextInt(100);
 
 `nextInt` takes an integer argument, `100`, and returns a random integer between `0` and `100-1` (**inclusive**). For the other types, they follow the same rule.
 
+:busstop: [***Back to the top***](#top)
+
 <h2 id="3-qa">IV. Q & A</h2>
 
 Q1: Waiting~
 
 A1: Waiting for the Q1's Waiting~
+
+:busstop: [***Back to the top***](#top)
