@@ -2,15 +2,15 @@
 
 :gem:
 
-* [char](#1-Char)
-  * [basic](#1-a)
+* [Char](#1-Char)
+  * [Basic](#1-a)
   * [Input](#1-b)
     * [Good Practice](#1-ba)
     * [Common Mistake](#1-bb)
   * [ASCII Table](#1-c)
-  * [Escape sequences](#1-d)
+  * [Escape Sequences](#1-d)
 * [String](#2-String)
-  * [basic](#2-a)
+  * [Basic](#2-a)
   * [String Input](#2-b)
   * [indexOf()](#2-c)
   * [substring()](#2-d)
@@ -133,7 +133,7 @@ String word = "Hello";
 
 * More [ASCII](https://www.ascii-code.com/) if interested.
 
-<h3 id="1-d">Escape sequences <a href="#top">&#128205;</a></h3>
+<h3 id="1-d">Escape Sequences <a href="#top">&#128205;</a></h3>
 
 | Escape Sequence | CHAR |
 | --- | --- |
