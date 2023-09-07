@@ -14,12 +14,11 @@
   * [String Input](#2-b)
   * [indexOf()](#2-c)
   * [substring()](#2-d)
-* [charAt()](#3-string-char)
-  * [charAt() with String](#3-a)
-* [Double](#4-double)
-  * [Division by Zero](#4-a)
-  * [Formatted Output](#4-b)
-* [Q & A](#5-qa)
+  * [charAt()](#2-e)
+* [Double](#3-double)
+  * [Division by Zero](#3-a)
+  * [Formatted Output](#3-b)
+* [Q & A](#4-qa)
 
 <h2 id="1-Char">Char <a href="#top">&#128205;</a></h2>
 
@@ -232,7 +231,7 @@ String quote_split1 = quote.substring(26); // health to the bones
 String quote_split2 = quote.substring(0, 8); // Sweetness, the index 8 element is not included
 ```
 
-<h2 id="3-string-char">charAt() <a href="#top">&#128205;</a></h2>
+<h3 id="2-e">Methods - <code>charAt()</code> <a href="#top">&#128205;</a></h3>
 
 ```
 String city = "Melbourne";
@@ -240,20 +239,20 @@ char firstLetter = city.charAt(0); // Store first element of city
 char fifthLetter = city.charAt(4); // Store fifth element of city
 ```
 
-<h2 id="4-double">Double <a href="#top">&#128205;</a></h2>
+<h2 id="3-double">Double <a href="#top">&#128205;</a></h2>
 
-<h3 id="4-a">Division by Zero <a href="#top">&#128205;</a></h3>
+<h3 id="3-a">Division by Zero <a href="#top">&#128205;</a></h3>
 
 In mathematics, the **division by zero** can be expressed as $\frac{a}{b}$, where $b = 0$. The expression has no meaning and it is also considered as undefined. In **Java**, the program will print a floating-point number `NaN` (Not a Number).
 
-<h3 id="4-b">Formatted Output <a href="#top">&#128205;</a></h3>
+<h3 id="3-b">Formatted Output <a href="#top">&#128205;</a></h3>
 
 ```
 double pi = 3.14159265358979323846;
 System.out.printf("pi = %.2f\n", pi); // pi = 3.14 (with a new line)
 ```
 
-<h2 id="5-qa">Q & A <a href="#top">&#128205;</a></h2>
+<h2 id="4-qa">Q & A <a href="#top">&#128205;</a></h2>
 
 Q1: `String quote_split1 = quote.substring(26);` what does the 26 represent? Confused with no `endIndex` there.
 
