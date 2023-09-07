@@ -2,40 +2,42 @@
 
 :dango:
 
-* I. [Logics & Conditions](#1-lc)
-  * [AND &&](#1-a)
-  * [OR ||](#1-b)
+* [Logics & Conditions](#1-lc)
+  * [AND](#1-a)
+  * [OR](#1-b)
   * [Relational Operators](#1-c)
-  * [Comparing String (in details - Memory Allocation)](#1-d)
-* II. [Boolean](#2-bool)
+  * [String Comparison](#1-d)
+    * [== operator](#1-da)
+    * [equals() operator](#1-db)
+* [Boolean](#2-bool)
   * [Return Type](#2-a)
-  * [Declaration](#2-b)
-* III. [if-else](#3-elif)
-  * [Syntax (In Good Practice)](#3-a)
+  * [Initialisation](#2-b)
+* [if-else](#3-elif)
+  * [Syntax](#3-a)
   * [Common Logical Issue](#3-b)
   * [Short Hand Form](#3-c)
-* IV. [Switch](#4-switch)
-  * [Syntax (In Good Practice)](#4-a)
+* [Switch](#4-switch)
+  * [Syntax](#4-a)
   * [Additional Cases](#4-b)
-* V. [Q & A](#5-qa)
+* [Q & A](#5-qa)
 
-<h2 id="1-lc">I. Logics & Conditions</h2>
+<h2 id="1-lc">Logics & Conditions <a href="#top">&#128205;</a></h2>
 
-<h3 id="1-a">AND <code>&&</code></h3>
+<h3 id="1-a">AND <code>&&</code> <a href="#top">&#128205;</a></h3>
 
 |     | T   | F   |
 | --- | --- | --- |
 | T   | T   | F   |
 | F   | F   | F   |
 
-<h3 id="1-b">OR <code>||</code></h3>
+<h3 id="1-b">OR <code>||</code> <a href="#top">&#128205;</a></h3>
 
 |     | T   | F   |
 | --- | --- | --- |
 | T   | T   | T   |
 | F   | T   | F   |
 
-<h3 id="1-c">Relational Operators</h3>
+<h3 id="1-c">Relational Operators <a href="#top">&#128205;</a></h3>
 
 **(for integers or floating-point values, only comparing the values)**
 
@@ -48,15 +50,13 @@
 * `==`, equal to
 * `!=`, not equal to
 
-<h3 id="1-d">Comparing String (in details - Memory Allocation)</h3>
+<h3 id="1-d">String Comparison <a href="#top">&#128205;</a></h3>
 
-* Using `==` operator
+<h4 id="1-da"><code>==</code> operator <a href="#top">&#128205;</a></h4>
 
-:bulb: **There's a terminology for this, reference comparison**
+:bulb: **AKA reference comparison**
 
-It checks if two references point to the same memory location , such as if they refer to the exact same object in memory.
-
-:bookmark_tabs: Check out the following code snippet
+It checks if two **references** point to the same memory location.
 
 ```
 String str1 = "Late Night Snacks";
@@ -70,23 +70,17 @@ String new_str1 = new String("Late Night Snacks");
 
 :bulb: **In general, it compares the memory addresses of the string objects rather than their actual content.**
 
-* Using `equals()` operator
-
-:bulb: How to use? Let's use the same code snippet provided on above
+<h4 id="1-db"><code>equals()</code> operator <a href="#top">&#128205;</a></h4>
 
 `str1.equals(new_str1)` means that the actual contents of `str1` and `new_str1` are now comparing, which will return **true**.
 
-**My suggestion is that every time when you're doing String comparison, it would be better to use `equals()` rather than `==` in order to avoid some potential issues or unexpected behaviours.**
+<h2 id="2-bool">Boolean <a href="#top">&#128205;</a></h2>
 
-<h2 id="2-bool">II. Boolean</h2>
-
-<h3 id="2-a">Return type</h3>
+<h3 id="2-a">Return type <a href="#top">&#128205;</a></h3>
 
 :bulb: The result of a relational operator is one of two special values: `true` or `false`, which belongs to the data type `boolean`.
 
-<h3 id="2-b">Declaration</h3>
-
-:bookmark_tabs: Check out the following code snippet
+<h3 id="2-b">Initialisation <a href="#top">&#128205;</a></h3>
 
 ```
 boolean isLegit = true;
@@ -97,9 +91,9 @@ boolean result = 2 < 3; // false. You can also do this, because the result of a 
 boolean result2 = (5 < 8 && 9 > 10 || 7 == 12); // EXAMPLE, it'll be false
 ```
 
-<h2 id="3-elif">III. if-else</h2>
+<h2 id="3-elif">if-else <a href="#top">&#128205;</a></h2>
 
-<h3 id="3-a">Syntax (In Good Practice)</h3>
+<h3 id="3-a">Syntax (In Good Practice) <a href="#top">&#128205;</a></h3>
 
 :bookmark_tabs: Check out the following code snippet
 
@@ -115,7 +109,7 @@ if (condition1) {
 
 `if-else` syntax in Java is pretty similar to other languages like C/C++, C# etc.
 
-<h3 id="3-b">Common Logical Issue</h3>
+<h3 id="3-b">Common Logical Issue <a href="#top">&#128205;</a></h3>
 
 :bookmark_tabs: Check out the following code snippet
 
@@ -174,7 +168,7 @@ if (!LNS) { // !false = true, which means it will be always true as long as the 
 
 :bulb: With this solution, all conditions will be checked. You might notice the `!LNS`. The `if-else` parentheses inside must be a condition and the results is either false or true. `LNS = false` is declared as default, by using `!LNS` can satisfy the first `if` and continue to do other operations.
 
-<h3 id="3-c">Short Hand Form</h3>
+<h3 id="3-c">Short Hand Form <a href="#top">&#128205;</a></h3>
 
 :grey_exclamation: Before explaning that, I personally not recommend this to programming beginners. So write `if-else` in a normal form for now and if there's one day that you think you are familiar with coding it, you could start getting used to the short hand form.
 
@@ -210,9 +204,9 @@ if (today.equals("Monday")) {
 
 Looks the same right.
 
-<h2 id="4-switch">IV. Switch</h2>
+<h2 id="4-switch">Switch <a href="#top">&#128205;</a></h2>
 
-<h3 id="4-a">Syntax (In Good Practice)</h3>
+<h3 id="4-a">Syntax (In Good Practice) <a href="#top">&#128205;</a></h3>
 
 :bookmark_tabs: Check out the following code snippet
 
@@ -247,7 +241,7 @@ if (number == 1) {
 }
 ```
 
-<h3 id="4-b">Additional Cases</h3>
+<h3 id="4-b">Additional Cases <a href="#top">&#128205;</a></h3>
 
 ```
 ...
@@ -276,12 +270,8 @@ if (food.equals("dango") || food.equals("ramen") || food.equals("Tempura")) {
 }
 ```
 
-<h2 id="5-qa">V. Q & A</h2>
+<h2 id="5-qa">Q & A <a href="#top">&#128205;</a></h2>
 
 Q1: ?
 
 A1: !
-
-Add more if you may have
-
-
