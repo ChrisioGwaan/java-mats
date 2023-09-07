@@ -1,8 +1,8 @@
-# Chapter 5
+<h1 id="#top">Chapter 5</h1>
 
 :ice_cream:
 
-* I. [Array](#1-array)
+* [Array](#1-array)
   * [Creation](#1-a)
     * [Without Initialisation](#1-aa)
     * [0 Size of an Array](#1-ab)
@@ -17,22 +17,24 @@
     * [Display](#1-bg)
     * [Copy](#1-bh)
     * [Enhanced Iteration](#1-bi)
-* II. [Random Numbers](#2-random)
-  * [Nondeterministic & Deterministic](#2-a)
+* [Random Numbers](#2-random)
+  * [(Non) Determinism](#2-a)
+    * [Determinism](#2-aa)
+    * [Nondeterminism](#2-ab)
   * [Library](#2-b)
   * [Method](#2-c)
-* III. [Q & A](#3-qa)
+* [Q & A](#3-qa)
 
-<h2 id="1-array">I. Array</h2>
+<h2 id="1-array">Array <a href="#top">&#128205;</a></h2>
 
 * **Array** is a sequence of values.
 * In Java, all the values in an array **must** have the same type.
 * The length of an array is established when the array is created. After creation, the length is **fixed**.
 * All the values in an array are called **elements**.
 
-<h3 id="1-a">Arrays Creation</h3>
+<h3 id="1-a">Arrays Creation <a href="#top">&#128205;</a></h3>
 
-<h4 id="1-aa">Without Initialisation</h4>
+<h4 id="1-aa">Without Initialisation <a href="#top">&#128205;</a></h4>
 
 The following code declares 4 arrays only, but not create them yet.
 
@@ -66,7 +68,7 @@ boolean[] d = new boolean[10000];
 
 For the size of an array, you can use an **integer** variable or an **integer** expression, and make sure the value is **non-negative**. Otherwise, you will get a `NegativeArraySizeException`. In general, `array.length` $\geq 0$.
 
-<h4 id="1-ab">0 Size of an Array</h4>
+<h4 id="1-ab">0 Size of an Array <a href="#top">&#128205;</a></h4>
 
 ```
 int[] emptyArray = new int[0];
@@ -74,7 +76,7 @@ int[] emptyArray = new int[0];
 
 Java allocates memory for the array because of the `new` operator, but it doesn't allocate memory for the elements. So it's not a good idea to access the elements of an empty array. If you do, you will get a `ArrayIndexOutOfBoundsException` because the index range for this array will be from $0$ to $-1$.
 
-<h4 id="1-ac">Initialisation</h4>
+<h4 id="1-ac">Initialisation <a href="#top">&#128205;</a></h4>
 
 You can also initialise an array with a comma-separated sequence of elements enclosed in braces.
 
@@ -86,7 +88,7 @@ boolean[] d = {true, false, true, false};
 // etc...
 ```
 
-<h3 id="1-b">Array Access</h3>
+<h3 id="1-b">Array Access <a href="#top">&#128205;</a></h3>
 
 Suppose we have an array as follows.
 
@@ -94,11 +96,11 @@ Suppose we have an array as follows.
 int[] a = mew int[5];
 ```
 
-<h4 id="1-ba">Index</h4>
+<h4 id="1-ba">Index <a href="#top">&#128205;</a></h4>
 
 The elements in an array are numbered from $0$ to $n-1$, where $n$ is the length of the array. The first element is at index $0$ (aka **zeroth**), and the last element is at index $n-1$.
 
-<h4 id="1-bb">Assignment</h4>
+<h4 id="1-bb">Assignment <a href="#top">&#128205;</a></h4>
 
 ```
 a[0] = 1;
@@ -108,13 +110,13 @@ a[3] = 4;
 a[4] = 5;
 ```
 
-<h4 id="1-bc">Selection</h4>
+<h4 id="1-bc">Selection <a href="#top">&#128205;</a></h4>
 
 ```
 System.out.println(a[0]); // 1
 ```
 
-<h4 id="1-bd">Elements Update</h4>
+<h4 id="1-bd">Elements Update <a href="#top">&#128205;</a></h4>
 
 ```
 a[0] = 99; // 1 -> 99
@@ -124,13 +126,13 @@ a[3] += 2; // 4 -> 6
 a[4] -= 3; // 5 -> 2
 ```
 
-<h4 id="1-be">Array Length</h4>
+<h4 id="1-be">Array Length <a href="#top">&#128205;</a></h4>
 
 ```
 System.out.println(a.length); // 5
 ```
 
-<h4 id="1-bf">Array Iteration</h4>
+<h4 id="1-bf">Array Iteration <a href="#top">&#128205;</a></h4>
 
 ```
 for (int i = 0; i < a.length; i++) {
@@ -138,7 +140,7 @@ for (int i = 0; i < a.length; i++) {
 }
 ```
 
-<h4 id="1-bg">Array Display</h4>
+<h4 id="1-bg">Array Display <a href="#top">&#128205;</a></h4>
 
 Sometimes, we may want to display an array, but you would get something unexpected. Directly print an array will get the following result, which is the memory **address** of the array. 
 
@@ -156,7 +158,7 @@ Additionally, you can use the `Arrays` class to display an array. In Java librar
 System.out.println(Arrays.toString(a)); // [99, 100, 4, 6, 2]
 ```
 
-<h4 id="1-bh">Array Copy</h4>
+<h4 id="1-bh">Array Copy <a href="#top">&#128205;</a></h4>
 
 Array variables contain **references** to arrays. When you assign an array variable to another, you are copying the reference. So the two variables refer to the same array. If you modify one, the other changes as well.
 
@@ -182,7 +184,7 @@ You can also use `java.util.Arrays` to copy an array. It provides a method calle
 int[] b = Arrays.copyOf(a, a.length);
 ```
 
-<h4 id="1-bi">Array Enhanced Iteration</h4>
+<h4 id="1-bi">Array Enhanced Iteration <a href="#top">&#128205;</a></h4>
 
 ```
 // Create a variable `val` to store the value of each element in the array.
@@ -192,27 +194,29 @@ for (int val : a) {
 }
 ```
 
-<h2 id="2-random">II. Random Numbers</h2>
+<h2 id="2-random">Random Numbers <a href="#top">&#128205;</a></h2>
 
-<h3 id="2-a">Nondeterministic & Deterministic</h3>
+<h3 id="2-a">(Non) Determinism <a href="#top">&#128205;</a></h3>
 
-:zap: This topic is part of Computer Theory, could be useful to talk about _Deterministic_ problem here.
+<h4 id="2-aa">Determinism <a href="#top">&#128205;</a></h4>
 
-:bulb: Deterministic: An algorithm or automation follows a single, well-defined sequence of steps for a given input. For those algorithms, they are predictable and produce the same input following the same path of execution.
+:bulb: **Determinism**: An algorithm or automation follows a single, well-defined sequence of steps for a given input. For those algorithms, they are predictable and produce the same input following the same path of execution.
 
-:bulb: Nondeterministic: An algorithm or automation has multiple possible paths it can follow for a given input and starting state. [A good example of Nondeterministic problem in Machine Learning](https://www.youtube.com/watch?v=Aut32pR5PQA)
+<h4 id="2-ab">Nondeterminism <a href="#top">&#128205;</a></h4>
 
-Making a program nondeterministic turns out to be hard, that's because it's impossible for a computer to generate truly random numbers (Similar to human's brain, we can come up with a random number out of nowhere. But for computer, a random number can only be generated by a specific algorithm). But there are algorithms that generate unpredictable sequences called pseudorandom numbers. For most applications, they are as good as random.
+:bulb: **Nondeterminism**: An algorithm or automation has multiple possible paths it can follow for a given input and starting state. 
 
-Tips: Deep Learning belongs to Machine Learning, ML belongs to AI. So AI has the biggest range of all.
+Making a program **nondeterministic** turns out to be hard, that's because it's impossible for a computer to generate truly random numbers (Similar to human's brain, we can come up with a random number out of nowhere. But for computer, a random number can only be generated by a specific algorithm). But there are algorithms that generate unpredictable sequences called pseudorandom numbers. For most applications, they are as good as random.
 
-<h3 id="2-b">Library</h3>
+Click [**HERE**](https://www.youtube.com/watch?v=Aut32pR5PQA) for a video example of Deep Learning Cars
+
+<h3 id="2-b">Library <a href="#top">&#128205;</a></h3>
 
 ```
 import java.util.Random;
 ```
 
-<h3 id="2-c">Method</h3>
+<h3 id="2-c">Method <a href="#top">&#128205;</a></h3>
 
 ```
 Random random = new Random();
@@ -226,7 +230,7 @@ a = random.nextInt(100);
 
 `nextInt` takes an integer argument, `100`, and returns a random integer between `0` and `100-1` (**inclusive**). For the other types, they follow the same rule.
 
-<h2 id="3-qa">IV. Q & A</h2>
+<h2 id="3-qa">Q & A <a href="#top">&#128205;</a></h2>
 
 Q1: Waiting~
 
