@@ -12,9 +12,15 @@
 * [String](#2-String)
   * [Basic](#2-a)
   * [String Input](#2-b)
-  * [indexOf()](#2-c)
-  * [substring()](#2-d)
-  * [charAt()](#2-e)
+  * [Operations](#2-c)
+    * [`indexOf()`](#2-ca)
+    * [`lastIndexOf()`](#2-cb)
+    * [`substring()`](#2-cc)
+    * [`charAt()`](#2-cd)
+    * [`concat()`](#2-ce)
+    * [`length()`](#2-cf)
+    * [`replace()`](#2-cg)
+    * [`+=` operator](#2-ch)
 * [Double](#3-double)
   * [Division by Zero](#3-a)
   * [Formatted Output](#3-b)
@@ -204,9 +210,14 @@ System.out.println("Year: " + year);
 System.out.println("Item name: " + itemName);
 ```
 
-<h3 id="2-c">Methods - <code>indexOf()</code> <a href="#top">&#128205;</a></h3>
+<h3 id="2-c">Operations <a href="#top">&#128205;</a></h3>
 
-`indexOf(ch, index)` - `ch` is the target to be searched. `index` is an **optional** parameter, and indicates where in the string to start looking.
+<h4 id="2-ca"><code>indexOf()</code> <a href="#top">&#128205;</a></h4>
+
+* `indexOf(ch, index)`
+* `ch` is the target to be searched.
+* `index` is an **optional** parameter, and indicates where in the string to start looking.
+* Return the index of the **first** occurrence of the character in the string.
 
 ```
 String flower = "poppy";
@@ -220,9 +231,22 @@ int index1 = quote.indexOf('e'); // 2
 int index2 = quote.indexOf('e', 17); // 2, because it starts to search from index 5 
 ```
 
-<h3 id="2-d">Methods - <code>substring()</code> <a href="#top">&#128205;</a></h3>
+<h4 id="2-cb"><code>lastIndexOf()</code> <a href="#top">&#128205;</a></h4>
 
-`substring(beginIndex, endIndex)` - `endIndex` is not included, and it is an **optional** parameter.
+* `lastIndexOf(ch)`
+* `ch` is the target to be searched.
+* Return the index of the **last** occurrence of the character in the string.
+
+```
+String quote = "Honesty is the best policy";
+int index = quote.lastIndexOf('t'); // 21
+```
+
+<h4 id="2-cc"><code>substring()</code> <a href="#top">&#128205;</a></h4>
+
+* `substring(beginIndex, endIndex)`
+* `endIndex` is not included, and it is an **optional** parameter.
+* Return a **new String** that is a substring of this String.
 
 ```
 String quote = "Sweetness to the soul and health to the bones";
@@ -231,12 +255,68 @@ String quote_split1 = quote.substring(26); // health to the bones
 String quote_split2 = quote.substring(0, 8); // Sweetness, the index 8 element is not included
 ```
 
-<h3 id="2-e">Methods - <code>charAt()</code> <a href="#top">&#128205;</a></h3>
+<h4 id="2-cd"><code>charAt()</code> <a href="#top">&#128205;</a></h4>
+
+* `charAt(index)`
+* `index` is the position of the character.
+* Return the **character** at the specified index.
 
 ```
 String city = "Melbourne";
 char firstLetter = city.charAt(0); // Store first element of city
 char fifthLetter = city.charAt(4); // Store fifth element of city
+```
+
+<h4 id="2-ce"><code>concat()</code> <a href="#top">&#128205;</a></h4>
+
+* `concat(str)`
+* `str` is the String that is concatenated to the end of this String.
+* Return a **new String** that represents the concatenation of this String and the `str` argument.
+* The `+` operator can also be used to concatenate two strings.
+
+```
+String str1 = "Hello";
+System.out.println(str1.concat(" World")); // Hello World
+```
+
+<h4 id="2-cf"><code>length()</code> <a href="#top">&#128205;</a></h4>
+
+* `length()`
+* Return the length of a String.
+
+```
+System.out.println("Loveleh".length()); // 7
+```
+
+<h4 id="2-cg"><code>replace()</code> <a href="#top">&#128205;</a></h4>
+
+* `replace(oldChar, newChar)`
+  * `oldChar` is the old character.
+  * `newChar` is the new character.
+  * Return a **new String** resulting from replacing all occurrences of `oldChar` in this string with `newChar`.
+
+```
+String str1 = "I need to drink some wa'er";
+System.out.println(str1.replace('\'', 't')); // I need to drink some water
+```
+
+* `replace(oldstr, newstr)`
+  * `oldstr` is the old string.
+  * `newstr` is the new string.
+  * Return a **new String** resulting from replacing all occurrences of `oldstr` in this string with `newstr`.
+
+```
+String str1 = "Today's late night snack is cookie";
+System.out.println(str1.replace("cookie", "ramen")); // Today's late night snack is ramen
+```
+
+<h4 id="2-ch"><code>+=</code> operator <a href="#top">&#128205;</a></h4>
+
+* `+=` operator is used to concatenate another string itself.
+
+```
+String str1 = "Hello";
+str1 += "!!!"; // Hello!!!
 ```
 
 <h2 id="3-double">Double <a href="#top">&#128205;</a></h2>
