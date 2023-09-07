@@ -18,7 +18,7 @@
   * [Short Hand Form](#3-c)
 * [Switch](#4-switch)
   * [Syntax](#4-a)
-  * [Additional Cases](#4-b)
+  * [Multiple Conditions](#4-b)
 * [Q & A](#5-qa)
 
 <h2 id="1-lc">Logics & Conditions <a href="#top">&#128205;</a></h2>
@@ -241,7 +241,7 @@ if (number == 1) {
 }
 ```
 
-<h3 id="4-b">Additional Cases <a href="#top">&#128205;</a></h3>
+<h3 id="4-b">Multiple Conditions <a href="#top">&#128205;</a></h3>
 
 ```
 ...
