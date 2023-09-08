@@ -1,4 +1,4 @@
-# Chapter 6
+<h1 id="top">Chapter 6</h1>
 
 :tea:
 
@@ -36,14 +36,14 @@
     * [ArrayList vs Array](#4-d)
 * [Q & A](#5-qa)
 
-<h2 id="1-Method">Method</h2>
+<h2 id="1-Method">Method <a href="#top">&#128205;</a></h2>
 
-<h3 id="1-a">Define</h3>
+<h3 id="1-a">Define <a href="#top">&#128205;</a></h3>
 
 * A **method** is to carry out a sequence of actions.
 * It can be defined **with** or **without** parameters.
 
-<h4 id="1-aa">Void</h4>
+<h4 id="1-aa">Void <a href="#top">&#128205;</a></h4>
 
 A **void** method is a method that does not return a value.
 
@@ -58,7 +58,7 @@ public static void printName(String name) {
 }
 ```
 
-<h4 id="1-ab">Return</h4>
+<h4 id="1-ab">Return <a href="#top">&#128205;</a></h4>
 
 A **return** method is a method that returns a value.
 
@@ -86,12 +86,12 @@ public static char add(char a, char b) {
 // etc...
 ```
 
-<h3 id="1-b">Convention of Method's Name</h3>
+<h3 id="1-b">Convention of Method's Name <a href="#top">&#128205;</a></h3>
 
 * Method names begin with a **lowercase** letter and the rest of the name is in **camel case**, e.g. `calculateSalaryForFullTimeEmployee()`.
 * You can use any names for the methods, **except the `main` and any other built-in keywords in Java.**
 
-<h3 id="1-c">Incremental Development</h3>
+<h3 id="1-c">Incremental Development <a href="#top">&#128205;</a></h3>
 
 Sometimes we might make mistakes when writing too much code at once before compiling and running the program, which leads to spending a lot of time to debug. Incremental development is a better approach in software development to avoid this problem. It shall follow:
 
@@ -108,23 +108,23 @@ public static int sumTotal
 }
 ```
 
-<h3 id="1-d">Argument & Parameter</h3>
+<h3 id="1-d">Argument & Parameter <a href="#top">&#128205;</a></h3>
 
 * **Argument** is the **actual value** that is passed to the method, e.g. `printName("Dango");`. `"Dango"` is the argument.
 * **Parameter** is the **variable** that is declared in the method, e.g. `public static void printName(String name)`. `name` is the parameter.
 
-<h3 id="1-e">Static & Instance Method</h3>
+<h3 id="1-e">Static & Instance Method <a href="#top">&#128205;</a></h3>
 
 * **Static** method is a method that can be called **without** creating an instance of the class. It is declared **with** the keyword `static`.
 * **Instance** method is a method that can **only** be called by creating an instance of the class. It is declared **without** the keyword `static`.
 
-<h3 id="1-f">Method & Function</h3>
+<h3 id="1-f">Method & Function <a href="#top">&#128205;</a></h3>
 
 In programming, the terms *method* and *function* are often used **interchangeably**.
 
 The term *method* is commonly used in Java to refer to blocks of code associated with classes and objects, the term *function* is often used more broadly to describe reusable code that performs a specific task. In Java, you typically work with *methods*, and the usage of *function* might be more prevalent in languages that don't use classes and objects as extensively as Java does.
 
-<h3 id="1-g">Invoke (or Call)</h3>
+<h3 id="1-g">Invoke (or Call) <a href="#top">&#128205;</a></h3>
 
 After a method is defined, it can be **invoked** (or **called**) by using the method name and passing the arguments.
 
@@ -135,7 +135,7 @@ public static void main(String[] args) {
 }
 ```
 
-<h3 id="1-h">Overload</h3>
+<h3 id="1-h">Overload <a href="#top">&#128205;</a></h3>
 
 * **Overload** is a feature that allows a class to have **more than one** method having the same name, if their argument lists are different.
 
@@ -151,7 +151,7 @@ public class MathOperations {
 }
 ```
 
-<h3 id="1-i">Override</h3>
+<h3 id="1-i">Override <a href="#top">&#128205;</a></h3>
 
 * **Override** is a feature that allows a subclass or child class to provide a **specific implementation** of a method that is already provided by one of its superclasses or parent classes.
 * `@Override` **annotation** is used to override a method in Java. The compiler checks if there is any method in the superclass that is overridden in the subclass, and if not, it throws a compile-time error.
@@ -171,9 +171,9 @@ class Circle extends Shape {
 }
 ```
 
-<h2 id="2-class">Class</h2>
+<h2 id="2-class">Class <a href="#top">&#128205;</a></h2>
 
-<h3 id="2-a">Field Initialisation</h3>
+<h3 id="2-a">Field Initialisation <a href="#top">&#128205;</a></h3>
 
 ```
 class Car {
@@ -187,7 +187,7 @@ class Car {
 }
 ```
 
-<h3 id="2-b">Default Constructor (without any arguments)</h3>
+<h3 id="2-b">Default Constructor (without any arguments) <a href="#top">&#128205;</a></h3>
 
 ```
 class Car {
@@ -212,13 +212,13 @@ Suppose there's a class called `City`. In order to access the members of `City`,
 * `metropolitan` is an instance.
 * `City()` is a default constructor from main class `City`.
 
-<h3 id="2-c">Implicit Parameter - <code>this</code></h3>
+<h3 id="2-c">Implicit Parameter - <code>this</code> <a href="#top">&#128205;</a></h3>
 
 Using `this` allows you to access class members. It's pretty necessary when field members and parameters share the same name.
 
 Even when field members and parameters do not share the same name, it is recommended to use `this` for accessing class members.
 
-<h3 id="2-d">Overload Constructor</h3>
+<h3 id="2-d">Overload Constructor <a href="#top">&#128205;</a></h3>
 
 In `Food.java` for example,
 
@@ -261,9 +261,9 @@ food1.setName(name);
 Food food2 = new Food(name);
 ```
 
-<h2 id="3-inheritance">Inheritance</h2>
+<h2 id="3-inheritance">Inheritance <a href="#top">&#128205;</a></h2>
 
-<h3 id="3-a">UML Class Diagram</h3>
+<h3 id="3-a">UML Class Diagram <a href="#top">&#128205;</a></h3>
 
 * Object explaination
 
@@ -291,7 +291,7 @@ Food food2 = new Food(name);
 
 ![](/java-prac/lib/img/perspective-of-class-diagram.png)
 
-<h3 id="3-b">Example of using inheritance</h3>
+<h3 id="3-b">Example of using inheritance <a href="#top">&#128205;</a></h3>
 
 ![](/java-prac/lib/img/ex1.jpeg)
 
@@ -301,7 +301,7 @@ When creating instances of subclasses, you **can** also use their main class met
 
 On the other hand, you **cannot** use subclasses methods if an instance is declared and refers to the main class.
 
-<h3 id="3-c">Completed Implementation with UML Class Diagram</h3>
+<h3 id="3-c">Completed Implementation with UML Class Diagram <a href="#top">&#128205;</a></h3>
 
 ![](/java-prac/lib/img/ex2.jpeg)
 
@@ -315,9 +315,9 @@ The `calculateSalary()` method is defined as a family of algorithms in the inter
 
 Code has been provided in `oosd` folder. Those are conceptional code and you don't need to implement the `TODO` methods.
 
-<h2 id="4-ArrayList">ArrayList</h2>
+<h2 id="4-ArrayList">ArrayList <a href="#top">&#128205;</a></h2>
 
-<h3 id="4-a">Primitives & References type</h3>
+<h3 id="4-a">Primitives & References type <a href="#top">&#128205;</a></h3>
 
 `int`, `double`, `char`, and `boolean` are primitive types.
 
@@ -332,7 +332,7 @@ Code has been provided in `oosd` folder. Those are conceptional code and you don
 | Boolean   | boolean   |
 | Long      | long      |
 
-<h3 id="4-b">Declaration</h3>
+<h3 id="4-b">Declaration <a href="#top">&#128205;</a></h3>
 
 ```
 ArrayList<Object> vals = new ArrayList<Object>()
@@ -342,13 +342,13 @@ When declaring an ArrayList, creates reference variable `vals` and that refers t
 
 As mentioned previously, reference is also known as an object. Primitive type is not allowed.
 
-<h3 id="4-c">Common ArrayList methods</h3>
+<h3 id="4-c">Common ArrayList methods <a href="#top">&#128205;</a></h3>
 
 ```
 ArrayList<Integer> list = new ArrayList<Integer>();
 ```
 
-<h4 id="4-ca"><code>add(element)</code></h4>
+<h4 id="4-ca"><code>add(element)</code> <a href="#top">&#128205;</a></h4>
 
 Appends the specified element to the end of this list.
 
@@ -359,7 +359,7 @@ list.add(2);
 // 1, 2
 ```
 
-<h4 id="4-cb"><code>add(index, element)</code></h4>
+<h4 id="4-cb"><code>add(index, element)</code> <a href="#top">&#128205;</a></h4>
 
 Inserts the specified element at the specified position in this list.
 
@@ -371,7 +371,7 @@ list.add(1, 5); // Insert val 5 into index 1
 // 1, 5, 2
 ```
 
-<h4 id="4-cc"><code>get(index)</code></h4>
+<h4 id="4-cc"><code>get(index)</code> <a href="#top">&#128205;</a></h4>
 
 Returns the element at the specified position in this list.
 
@@ -384,7 +384,7 @@ a = list.get(1)
 // a stores the value of 2, from index 1 in arraylist
 ```
 
-<h4 id="4-cd"><code>set(index, element)</code></h4>
+<h4 id="4-cd"><code>set(index, element)</code> <a href="#top">&#128205;</a></h4>
 
 Replaces the element at the specified position in this list with the specified element.
 
@@ -397,7 +397,7 @@ list.set(1, 12)
 // Replaces index 1 val into 12
 ```
 
-<h4 id="4-ce"><code>size()</code></h4>
+<h4 id="4-ce"><code>size()</code> <a href="#top">&#128205;</a></h4>
 
 Returns the number of elements in this list.
 
@@ -408,7 +408,7 @@ list.add(7);
 System.out.println(list.size()); // print 2
 ```
 
-<h4 id="4-cf"><code>clear()</code></h4>
+<h4 id="4-cf"><code>clear()</code> <a href="#top">&#128205;</a></h4>
 
 Removes all of the elements from this list.
 
@@ -423,7 +423,7 @@ list.clear();
 // null
 ```
 
-<h3 id="4-d">ArrayList vs Array</h3>
+<h3 id="4-d">ArrayList vs Array <a href="#top">&#128205;</a></h3>
 
 | Array                       | ArrayList        |
 |-----------------------------|------------------|
@@ -435,7 +435,7 @@ Basically, **Array** needs a specified size to be declared, but **ArrayList** do
 
 
 
-<h2 id="5-qa">Q & A</h2>
+<h2 id="5-qa">Q & A <a href="#top">&#128205;</a></h2>
 
 Q1: How do **class** and **ArrayList** actually work together?
 
