@@ -2,31 +2,31 @@
 
 :tulip: :cherry_blossom:
 
-* I. [Algorithm & Analysis](#1-ac)
+* [Algorithm & Analysis](#1-ac)
   * [O Notation](#1a)
   * [Ω Notation](#1b)
   * [Θ Notation](#1c)
   * [Complexity Analysis](#1d)
-* II. [Coding Example - Analysis](#2-ca)
-* III. [Q & A](#3-qa)
+* [Coding Example - Analysis](#2-ca)
+* [Q & A](#3-qa)
 
-<h2 id="1-ac">I. Algorithm & Analysis</h2>
+<h2 id="1-ac">Algorithm & Analysis <a href="#top">&#128205;</a></h2>
 
 **Algorithm**, is a step-by-step set of instructions or a well-defined procedure for solving a particular problem or accomplishing a specific task.
 
-<h3 id="1a">O Notation | <b>Compulsory</b></h3>
+<h3 id="1a">O Notation | <b>Compulsory</b> <a href="#top">&#128205;</a></h3>
 
 **Big O notation**, represents the **upper** bound or **worst-case** time complexity of an algorithm. It provides an upper limit on the number of operations an algorithm will take as a function of its input size.
 
-<h3 id="1b">Ω Notation | <b>Optional</b></h3>
+<h3 id="1b">Ω Notation | <b>Optional</b> <a href="#top">&#128205;</a></h3>
 
 **Omega notation**, represents the **lower** bound or **best-case** time complexity of an algorithm. It provides a lower limit on the number of operations an algorithm will take as a function of its input size.
 
-<h3 id="1c">Θ Notation | <b>Optional</b></h3>
+<h3 id="1c">Θ Notation | <b>Optional</b> <a href="#top">&#128205;</a></h3>
 
 **Theta notation**, represents **BOTH** the upper and lower bounds of an algorithm's time complexity. It provides a tight range within which the actual number of operations will fall as a function of its input size.
 
-<h3 id="1d">O Notation - Complexity Chart | <b>Compulsory</b></h3>
+<h3 id="1d">O Notation - Complexity Chart | <b>Compulsory</b> <a href="#top">&#128205;</a></h3>
 
 | Complexity    | Name              | Description                                                               |
 |---------------|-------------------|---------------------------------------------------------------------------|
@@ -51,7 +51,7 @@ By comparing $O(log n)$ and $O(n^{2})$, suppose 1 element needs 1 second of oper
 
 As you can see, the rate of $O(n^{2})$ is apparently higher than the $O(log n)$ one, that's why the complexity of $O(n^{2})$ is considered as *Horrible*.
 
-<h2 id="2-ca">II. Coding Example - Analysis</h2>
+<h2 id="2-ca">Coding Example - Analysis <a href="#top">&#128205;</a></h2>
 
 :raising_hand: Before reading this session, make sure you have accomplished the reading of `O notation` and `Algorithm analysis` chapters on Zybook.
 
@@ -154,7 +154,7 @@ In version 2.0 printing, there's a nested `for-loop` fo sho. To find complexity,
 
 Therefore, if there is another `for` inside the `j=0` for loop, $O(n * n * n) = O(n^{3})$. And so on.
 
-<h2 id="3-qa">III. Q & A</h2>
+<h2 id="3-qa">Q & A <a href="#top">&#128205;</a></h2>
 
 Q1: Waiting~
 
