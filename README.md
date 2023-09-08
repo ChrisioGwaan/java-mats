@@ -57,7 +57,7 @@
 
 *Ref:* $Day\space 10$
 
-<h2 id="c10">Chapter 10 <a href="/java-prac/src/chapter10O/c10-note.mdd">&#128136;</a> <a href="#top">&#128205;</a></h2>
+<h2 id="c10">Chapter 10 <a href="/java-prac/src/chapter10O/c10-note.md">&#128136;</a> <a href="#top">&#128205;</a></h2>
 
 *@:* $File\space and\space Object\space Manipulation$
 
