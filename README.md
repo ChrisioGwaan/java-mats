@@ -2,6 +2,8 @@
 
 > **Chapter 1**
 
+[Chapter 1](/java-prac/src/chapter01/c1-note.md)
+
 *@:* `Variables`, `Assignments`, `Maths`, `I/O (Input/Output)`
 
 *Ref:* `Day 1`, `2`, `3`
