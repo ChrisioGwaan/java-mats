@@ -1,67 +1,70 @@
-# Java Learning Materials 
+<h1 id="#top">Java Learning Materials </h1>
 
-> **Chapter 1**
+* :barber: is a jump point to the source code of the chapter.
+* :round_pushpin: will take you back to the top of the page.
 
-*@:* `Variables`, `Assignments`, `Maths`, `I/O (Input/Output)`
+<h2 id="c1">Chapter 1 <a href="/java-prac/src/chapter01/c1-note.md">&#128136;</a> <a href="#top">&#128205;</a></h2>
 
-*Ref:* `Day 1`, `2`, `3`
+*@:* $Variables,\space Assignments,\space Math,\space I/O (Input/Output)$
 
-> **Chapter 2**
+*Ref:* $Day \space 1 \space to \space 3$
 
-*@:* `String`, `char`, `double`
+<h2 id="c2">Chapter 2 <a href="/java-prac/src/chapter02/c2-note.md">&#128136;</a> <a href="#top">&#128205;</a></h2>
 
-*Ref:* `Day 1`, `2`, `3`
+*@:* $String,\space char,\space double$
 
-> **Chapter 3**
+*Ref:* $Day \space 1 \space to \space 3$
 
-*@:* `Logics`, `Conditions`, `boolean`, `Branches`
+<h2 id="c3">Chapter 3 <a href="/java-prac/src/chapter03/c3-note.md">&#128136;</a> <a href="#top">&#128205;</a></h2>
 
-*Ref:* `Day 4`
+*@:* $Logics,\space Conditions,\space boolean,\space Branches$
 
-> **Chapter 4**
+*Ref:* $Day\space 4$
 
-*@:* `Loops`, `Enumerations`
+<h2 id="c4">Chapter 4 <a href="/java-prac/src/chapter04/c4-note.md">&#128136;</a> <a href="#top">&#128205;</a></h2>
 
-*Ref:* `Day 5`
+*@:* $Loops,\space Enumerations$
 
-> **Chapter 5**
+*Ref:* $Day\space 5$
 
-*@:* `Array`
+<h2 id="c5">Chapter 5 <a href="/java-prac/src/chapter05/c5-note.md">&#128136;</a> <a href="#top">&#128205;</a></h2>
 
-*Ref:* `Day 6`
+*@:* $Array$
 
-> **Chapter 6**
+*Ref:* $Day\space 6$
 
-*@:* `Methods`, `ArrayList`, `Object`, `Class`, `Inheritance`
+<h2 id="c6">Chapter 6 <a href="/java-prac/src/chapter06/c6-note.md">&#128136;</a> <a href="#top">&#128205;</a></h2>
 
-*Ref:* `Day 7`, `8`, `9`
+*@:* $Methods,\space ArrayList,\space Object,\space Class,\space Inheritance$
 
-> **Chapter 7**
+*Ref:* $Day\space 7\space to \space 9$
 
-*@:* `Algorithm Concepts`
+<h2 id="c7">Chapter 7 <a href="/java-prac/src/chapter07/c7-note.md">&#128136;</a> <a href="#top">&#128205;</a></h2>
 
-*Ref:* `Day 10`
+*@:* $Algorithm\space Concepts$
 
-> **Chapter 8**
+*Ref:* $Day\space 10$
 
-*@:* `Searching Algorithm`
+<h2 id="c8">Chapter 8 <a href="/java-prac/src/chapter08/c8-note.md">&#128136;</a> <a href="#top">&#128205;</a></h2>
 
-*Ref:* `Day 10`
+*@:* $Searching\space Algorithm$
 
-> **Chapter 9**
+*Ref:* $Day\space 10$
 
-*@:* `Sorting Algorithm`
+<h2 id="c9">Chapter 9 <a href="/java-prac/src/chapter09/c9-note.md">&#128136;</a> <a href="#top">&#128205;</a></h2>
 
-*Ref:* `Day 10`
+*@:* $Sorting\space Algorithm$
 
-> **Chapter 10**
+*Ref:* $Day\space 10$
 
-*@:* `File and Object Manipulation`
+<h2 id="c10">Chapter 10 <a href="/java-prac/src/chapter10O/c10-note.md">&#128136;</a> <a href="#top">&#128205;</a></h2>
 
-*Ref:* `Day 11`
+*@:* $File\space and\space Object\space Manipulation$
 
-> **Chapter 11**
+*Ref:* $Day\space 11$
 
-*@:* `float`, `set`
+<h2 id="c11">Chapter 11 <a href="/java-prac/src/chapter11/c11-note.md">&#128136;</a> <a href="#top">&#128205;</a></h2>
 
-*Ref:* `Additional`
+*@:* $float,\space set$
+
+*Ref:* $Additional$
