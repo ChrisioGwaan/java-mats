@@ -5,7 +5,7 @@
 
 <h2 id="c1">Chapter 1 <a href="/java-prac/src/chapter01/c1-note.md">&#128136;</a> <a href="#top">&#128205;</a></h2>
 
-*@:* $ Variables,\space Assignments,\space Math,\space I/O (Input/Output) $
+*@:* ${Variables,\space Assignments,\space Math,\space I/O (Input/Output)}$
 
 *Ref:* $Day \space 1 \space to \space 3$
 
