@@ -1,5 +1,4 @@
 package chapter06.oosd;
-
 /*
  * The Employee class
  */
@@ -54,7 +53,8 @@ public class Employee implements CalculateStrategy {
 
     @Override
     public double calculateSalary() {
-        // TODO: Implement an algorithm to call calculateSalary() method based on the type of employee
+        // TODO: Implement an algorithm to call calculateSalary() method based on the
+        // type of employee
         return 0;
     }
 

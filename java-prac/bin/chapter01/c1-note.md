@@ -1,4 +1,4 @@
-# Chapter 1
+<h1 id="#top">Chapter 1</h1>
 
 :flags:
 
@@ -6,24 +6,34 @@
   * [Fo sho, hello world!](#1-a)
   * [Short-cut](#1-b)
   * [Printf specifiers](#1-c)
-  * [Int specifiers](#1-d)
-  * [Float specifiers](#1-e)
-  * [String specifiers](#1-f)
+    * [Int specifiers](#1-ca)
+    * [Float specifiers](#1-cb)
+    * [String specifiers](#1-cc)
 * [Declaration & Memory Allocation](#2-DMA)
-  * [Sizes of common data types](#2-a)
-  * [Initialisation (in details)](#2-b)
+  * [Sizes of Common Data Types](#2-a)
+  * [Java Primitive Type Data Range](#2-b)
+    * [short](#2-ba)
+    * [int](#2-bb)
+    * [long](#2-bc)
+    * [float](#2-bd)
+    * [double](#2-be)
+    * [char](#2-bf)
+    * [byte](#2-bg)
+    * [void](#2-bh)
+  * [Science Notation](#2-c)
+  * [Initialisation](#2-d)
 * [Input](#3-Input)
-  * [Import the library first](#3-a)
+  * [Library](#3-a)
   * [Create a Scanner object](#3-b)
   * [Methods](#3-c)
 * [Maths](#4-Maths)
-  * [Import the library first](#4-a)
+  * [Library](#4-a)
   * [Commonly Used Methods](#4-b)
 * [Reminder](#5-Reminder)
 
-<h2 id="1-Output">Print</h2>
+<h2 id="1-Output">Print <a href="#top">&#128205;</a></h2>
 
-<h3 id="1-a">Fo sho, hello world!</h3>
+<h3 id="1-a">Fo sho, hello world! <a href="#top">&#128205;</a></h3>
 
 1. Print a specified string and appends a newline character at the end.
 
@@ -47,7 +57,7 @@ int amount = 12;
 System.out.printf("We got %d %s in the barrel!", amount, item_name);
 ```
 
-4. `<Optional>` Print a single character at a time (without a `\n` at the end).
+4. Print a single character at a time (without a `\n` at the end) | **Optional**
 
 ```
 char c = 'a';
@@ -55,26 +65,26 @@ char c = 'a';
 System.out.write(c);
 ```
 
-5. `<Optional>` Logging framework to print log messages to the console.
+5. Logging framework to print log messages to the console | **Optional**
 
 ```
 import java.util.logging.Logger;
 
 Logger logger = Logger.getLogger("MyLogger");
-logger.info("JAVA ?!");
+logger.info("[INFO] Welcome to my program!");
 ```
 
-6. `<Optional>` Print a specified string as a ***error message*** and appends a newline character at the end.
+6. Print a specified string as a ***error message*** and appends a newline character at the end | **Optional**
 
 ```
 System.err.println("404 NOT FOUND"); // Just an example
 ```
 
-<h3 id="1-b">Short-cut for <code>System.out.println()</code> on VS Code</h3>
+<h3 id="1-b">Short-cut for <code>System.out.println()</code> on VS Code <a href="#top">&#128205;</a></h3>
 
 * Type `sysout` and press ***tab***
 
-<h3 id="1-c">Printf specifiers</h3>
+<h3 id="1-c">Printf specifiers <a href="#top">&#128205;</a></h3>
 
 | Specifier   | Data Type     |
 |-------------|---------------|
@@ -88,7 +98,7 @@ System.err.println("404 NOT FOUND"); // Just an example
 | `%%`        | Preserve percentage sign |
 | `%n`        | New line |
 
-<h3 id="1-d">Additional Printf specifiers - <b>int</b></h3>
+<h4 id="1-ca">Additional Printf specifiers - <b>int</b> <a href="#top">&#128205;</a></h4>
 
 ```
 int population = 8500000; // EXAMPLE
@@ -103,7 +113,7 @@ int population = 8500000; // EXAMPLE
 | `%o`       | `40331440`     | Octal |
 | `%x`       | `81b320`       | Hexadecimal |
 
-<h3 id="1-e">Additional Printf specifiers - <b>float</b></h3>
+<h4 id="1-cb">Additional Printf specifiers - <b>float</b> <a href="#top">&#128205;</a></h4>
 
 ```
 double pearls_sell = 15.2; // EXAMPLE, in Java, mostly use double type instead of float
@@ -113,7 +123,7 @@ double pearls_sell = 15.2; // EXAMPLE, in Java, mostly use double type instead o
 |-----------|----------------|------------------------------|
 | `%.4f`    | `15.2000`      | 4 decimal places             |
 
-<h3 id="1-f">Additional Printf specifiers - <b>String</b></h3>
+<h4 id="1-cc">Additional Printf specifiers - <b>String</b> <a href="#top">&#128205;</a></h4>
 
 ```
 String name = "dango" // EXAMPLE
@@ -131,9 +141,9 @@ As you may notice that some specifiers work in all data types, for instance, `%2
 
 **Always preserve a newline at the end of a program.**
 
-<h2 id="2-DMA">Declaration & Memory Allocation</h2>
+<h2 id="2-DMA">Declaration & Memory Allocation <a href="#top">&#128205;</a></h2>
 
-<h3 id="2-a">Sizes of common data types</h3>
+<h3 id="2-a">Sizes of Common Data Types <a href="#top">&#128205;</a></h3>
 
 | Data Type | Size in Bytes |
 |-----------|---------------|
@@ -145,13 +155,51 @@ As you may notice that some specifiers work in all data types, for instance, `%2
 | double    | 8             |
 | bool      | 1             |
 
-No `String` there right? That's because, **in programming, a String is made up of multiple characters.**
+* **A String is made up of multiple characters.**
 
-Did I mention `double` is preferable in Java? Statistically say YES, because the range of `double` is `1.7e-308 to 1.7e+308` and `float` one is `3.4e-038 to 3.4e+038`.
+<h3 id="2-b">Java Primitive Type Data Range <a href="#top">&#128205;</a></h3>
 
-Apparently, `double` has a larger range than `float`.
+<h4 id="2-ba">short <a href="#top">&#128205;</a></h4>
 
-**Science Notation** yes will be explained here.
+* Signed $16$ bits
+* $-32768$ to $32767$
+
+<h4 id="2-bb">int <a href="#top">&#128205;</a></h4>
+
+* Signed $32$ bits
+* $-2147483648$ ~ $2147483647$
+
+<h4 id="2-bc">long <a href="#top">&#128205;</a></h4>
+
+* Signed $64$ bits
+* $-9223372036854775808$ ~ $9223372036854775807$
+
+<h4 id="2-bd">float <a href="#top">&#128205;</a></h4>
+
+* $32$ bits
+* $1.40239846\mathrm{e}{-45}f$ ~ $3.40282347\mathrm{e}{+38}f$
+
+<h4 id="2-be">double <a href="#top">&#128205;</a></h4>
+
+* $64$ bits
+* $4.94065645841246544\mathrm{e}{-324}$ ~ $1.79769313486231570\mathrm{e}{+308}$
+
+<h4 id="2-bf">char <a href="#top">&#128205;</a></h4>
+
+* Unsigned $16$ bits
+* $0('\backslash u 0000')$ ~ $65535 ('\backslash uffff')$
+
+<h4 id="2-bg">byte <a href="#top">&#128205;</a></h4>
+
+* Signed $8$ bits
+* $-128$ ~ $127$
+
+<h4 id="2-bh">void <a href="#top">&#128205;</a></h4>
+
+* n/a
+* n/a
+
+<h3 id="2-c">Science Notation <a href="#top">&#128205;</a></h3>
 
 For example, `1.5e+3` in maths will be `1500`
 
@@ -161,7 +209,7 @@ How about `1.5e-3`, it'll be `0.0015`
 
 $$1.5 * 10^{-3}$$
 
-<h3 id="2-b">Initialisation (in details)</h3>
+<h3 id="2-d">Initialisation (in details) <a href="#top">&#128205;</a></h3>
 
 Look at the following code snippet:
 ```
@@ -179,15 +227,15 @@ In both cases, on most systems, an `int` typically occupies 4 bytes of memory. T
 
 **It's worth noting for declareing a variable without being assigned to a value.**
 
-<h2 id="3-Input">Input</h2>
+<h2 id="3-Input">Input <a href="#top">&#128205;</a></h2>
 
-<h3 id="3-a">Import the library first</h3>
+<h3 id="3-a">Library <a href="#top">&#128205;</a></h3>
 
 ```
 import java.util.Scanner;
 ```
 
-<h3 id="3-b">Create a Scanner object</h3>
+<h3 id="3-b">Create a Scanner object <a href="#top">&#128205;</a></h3>
 
 ```
 Scanner scnr = new Scanner(System.in);
@@ -195,7 +243,7 @@ Scanner scnr = new Scanner(System.in);
 
 The `scnr` represents as an **instance** of the `Scanner` class.
 
-<h3 id="3-c">Methods</h3>
+<h3 id="3-c">Methods <a href="#top">&#128205;</a></h3>
 
 * `scnr.nextInt()`, integer input
 * `scnr.nextDouble()`, double input
@@ -211,25 +259,28 @@ scnr.close();
 
 **To release system resources as soon as you're finished with them to ensure efficient resource utilization and prevent any potential issues.**
 
-<h2 id="4-Maths">Maths</h2>
+<h2 id="4-Maths">Maths <a href="#top">&#128205;</a></h2>
 
-<h3 id="4-a">Import the library first</h3>
+<h3 id="4-a">Library <a href="#top">&#128205;</a></h3>
 
 ```
 import java.lang.Math;
 ```
 
-<h3 id="4-b">Commonly Used Methods</h3>
+<h3 id="4-b">Commonly Used Methods <a href="#top">&#128205;</a></h3>
 
-* `Math.sqrt()`
-* `Math.sin()`
-* `Math.cos()`
-* `Math.tan()`
-* `Math.pow()`
+* `Math.sqrt()`, square root
+* `Math.sin()`, sine
+* `Math.cos()`, cosine
+* `Math.tan()`, tangent
+* `Math.pow()`, power
 * `Math.abs()`, absolute value
 * `Math.PI`, the value of π
+* `Math.E`, the value of e
+* `Math.floor()`, round down
+* `Math.ceil()`, round up
 
-<h2 id="5-Reminder">Reminder</h2>
+<h2 id="5-Reminder">Reminder <a href="#top">&#128205;</a></h2>
 
 1. **Ignore good practices only when doing challenges.**
 2. **Understand the question step by step.**

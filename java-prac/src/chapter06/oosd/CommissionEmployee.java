@@ -1,5 +1,4 @@
 package chapter06.oosd;
-
 /*
  * The CommissionEmployee subclass
  */
@@ -9,7 +8,8 @@ class CommissionEmployee extends Employee {
     private double sales;
     final private double commissionRate = 0.3; // 30% as default
 
-    public CommissionEmployee(int ID, String name, String employeeType, double hourlyworked, double baseSalary, double sales) {
+    public CommissionEmployee(int ID, String name, String employeeType, double hourlyworked, double baseSalary,
+            double sales) {
         super(ID, name, employeeType, hourlyworked);
         this.baseSalary = baseSalary;
         this.sales = sales;

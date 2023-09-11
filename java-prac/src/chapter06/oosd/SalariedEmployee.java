@@ -1,5 +1,4 @@
 package chapter06.oosd;
-
 /*
  * The SalariedEmployee subclass
  */

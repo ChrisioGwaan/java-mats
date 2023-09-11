@@ -22,7 +22,8 @@ class Food {
         isHealthy = false;
     }
 
-    // Another Constructor that takes in a String name, double calories, int quantity, and boolean isHealthy
+    // Another Constructor that takes in a String name, double calories, int
+    // quantity, and boolean isHealthy
     public Food(String name, double calories, int quantity, boolean isHealthy) {
         this.name = name;
         this.calories = calories;
@@ -72,7 +73,7 @@ class Food {
         System.out.println("Food name: " + this.name);
         System.out.printf("Calories: %.2f\n", this.calories);
         System.out.println("Quantity: " + this.quantity);
-        System.out.println("Total Calories: "+ calculateTotalCalories());
+        System.out.println("Total Calories: " + calculateTotalCalories());
         System.out.println("IsHealthy: " + this.isHealthy + "\n");
     }
 }
