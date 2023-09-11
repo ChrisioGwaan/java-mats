@@ -1,5 +1,4 @@
 package chapter06.oosd;
-
 /*
  * The CasualEmployee subclass
  */
@@ -9,7 +8,8 @@ class CasualEmployee extends Employee {
     private double overtimeRate;
     final private int OVERTIME_START = 36; // Overtime paid starting from 36 hours and the value cannot be changed
 
-    public CasualEmployee(int ID, String name, String employeeType, double hourlyworked, double hourlySalary, double overtimeRate) {
+    public CasualEmployee(int ID, String name, String employeeType, double hourlyworked, double hourlySalary,
+            double overtimeRate) {
         super(ID, name, employeeType, hourlyworked);
         this.hourlySalary = hourlySalary;
         this.overtimeRate = overtimeRate;
@@ -38,7 +38,8 @@ class CasualEmployee extends Employee {
         // if the hourlyworked is less than or equal to 36 hours
         // return the calculated salary = hourlySalary * hourlyworked
         // if the hourlyworked is more than 36 hours
-        // return the calculated salary = hourlySalary * OVERTIME_START + (hourlyworked - OVERTIME_START) * overtimeRate
+        // return the calculated salary = hourlySalary * OVERTIME_START + (hourlyworked
+        // - OVERTIME_START) * overtimeRate
         return 0;
     }
 }

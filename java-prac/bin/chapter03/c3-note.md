@@ -1,30 +1,50 @@
-# Chapter 3 - Basic III
+# Chapter 3
 
 :dango:
 
-* I. [Logics & Conditions](#1-lc)
-* II. [Boolean](#2-bool)
-* III. [if-else](#3-elif)
-* IV. [Switch](#4-switch)
-* V. [Q & A](#5-qa)
+* [Logics & Conditions](#1-lc)
+  * [AND](#1-a)
+  * [OR](#1-b)
+  * [Relational Operators](#1-c)
+  * [String Comparison](#1-d)
+    * [== operator](#1-da)
+    * [equals()](#1-db)
+    * [compareTo()](#1-de)
+    * [equalsIgnoreCase()](#1-df)
+    * [compareToIgnoreCase()](#1-dg)
+  * [Short-circuit Evaluation](#1-e)
+  * [Floating-point Numbers Comparison](#1-f)
+    * [Issue with == operator](#1-fa)
+    * [BigDecimal](#1-fb)
+* [Boolean](#2-bool)
+  * [Return Type](#2-a)
+  * [Initialisation](#2-b)
+* [If-else](#3-elif)
+  * [Syntax](#3-a)
+  * [Common Logical Issue](#3-b)
+  * [Short Hand Form](#3-c)
+* [Switch](#4-switch)
+  * [Syntax](#4-a)
+  * [Multiple Conditions](#4-b)
+* [Q & A](#5-qa)
 
-<h2 id="1-lc">I. Logics & Conditions</h2>
+<h2 id="1-lc">Logics & Conditions <a href="#top">&#128205;</a></h2>
 
-> AND `&&`
+<h3 id="1-a">AND <code>&&</code> <a href="#top">&#128205;</a></h3>
 
 |     | T   | F   |
 | --- | --- | --- |
 | T   | T   | F   |
 | F   | F   | F   |
 
-> OR `||`
+<h3 id="1-b">OR <code>||</code> <a href="#top">&#128205;</a></h3>
 
 |     | T   | F   |
 | --- | --- | --- |
 | T   | T   | T   |
 | F   | T   | F   |
 
-> Relational Operators
+<h3 id="1-c">Relational Operators <a href="#top">&#128205;</a></h3>
 
 **(for integers or floating-point values, only comparing the values)**
 
@@ -37,15 +57,13 @@
 * `==`, equal to
 * `!=`, not equal to
 
-> Comparing String (in details - Memory Allocation)
+<h3 id="1-d">String Comparison <a href="#top">&#128205;</a></h3>
 
-* Using `==` operator
+<h4 id="1-da"><code>==</code> operator <a href="#top">&#128205;</a></h4>
 
-:bulb: **There's a terminology for this, reference comparison**
+:bulb: **AKA reference comparison**
 
-It checks if two references point to the same memory location , such as if they refer to the exact same object in memory.
-
-:bookmark_tabs: Check out the following code snippet
+It checks if two **references** point to the same memory location.
 
 ```
 String str1 = "Late Night Snacks";
@@ -59,23 +77,74 @@ String new_str1 = new String("Late Night Snacks");
 
 :bulb: **In general, it compares the memory addresses of the string objects rather than their actual content.**
 
-* Using `equals()` operator
-
-:bulb: How to use? Let's use the same code snippet provided on above
+<h4 id="1-db"><code>equals()</code> <a href="#top">&#128205;</a></h4>
 
 `str1.equals(new_str1)` means that the actual contents of `str1` and `new_str1` are now comparing, which will return **true**.
 
-**My suggestion is that every time when you're doing String comparison, it would be better to use `equals()` rather than `==` in order to avoid some potential issues or unexpected behaviours.**
+<h4 id="1-de"><code>compareTo()</code> <a href="#top">&#128205;</a></h4>
 
-<h2 id="2-bool">II. Boolean</h2>
+Suppose we have four Strings as follows. Remember that `compareTo()` is case sensitive.
 
-> Data type
+```
+String str1 = "oreo";
+String str2 = "ore";
+String str3 = "oreo";
+String str4 = "oreooo";
+
+System.out.println(str1.compareTo(str2)); // 1, str1 has 1 more character than str2
+System.out.println(str1.compareTo(str3)); // 0
+System.out.println(str1.compareTo(str4)); // -2, str1 has 2 less characters than str4
+```
+
+<h4 id="1-df"><code>equalsIgnoreCase()</code> <a href="#top">&#128205;</a></h4>
+
+Two strings are considered equal ignoring case if they are of the same length and corresponding characters in the two strings are equal ignoring case.
+
+<h4 id="1-dg"><code>compareToIgnoreCase()</code> <a href="#top">&#128205;</a></h4>
+
+Same as `compareTo()`, but it ignores case.
+
+<h3 id="1-e">Short-circuit Evaluation <a href="#top">&#128205;</a></h3>
+
+:bulb: **Short-circuit evaluation** is the process of evaluating the second argument only when needed.
+
+Suppose we have two variables `x` and `y` as follows.
+
+```
+if (x > 0 && y > 0) {
+    System.out.println("Both x and y are positive");
+}
+```
+
+* If `x > 0` is false, then `y > 0` will not be evaluated, because the result of `false && y > 0` will always be false.
+* If `x > 0` is true, then `y > 0` will be evaluated, because the result of `true && y > 0` depends on the value of `y`.
+
+<h3 id="1-f">Floating-point Numbers Comparison <a href="#top">&#128205;</a></h3>
+
+<h4 id="1-fa">Issue with <code>==</code> operator <a href="#top">&#128205;</a></h4>
+
+It is **NOT** recommended to use `==` operator to compare floating-point numbers, because the result might be unexpected. Floating-point numbers should be compared for a **close enough** value, like `Math.abs(a - b) < 1e-10` as an example. **Epislon** is to avoid the issue of floating-point numbers and it is expected to be a very small number. (Commonly $0.0001$)
+
+If you are interested discovering the actual floating numbers, you can try the following code on your own machine.
+
+```
+double a = 0.1;
+
+System.out.println("The value of a is " + a);
+System.out.println("The actual floating value of a is " + new.BigDecimal(a));
+```
+
+<h4 id="1-fb"><code>BigDecimal</code> <a href="#top">&#128205;</a></h4>
+
+`BigDecimal` is a **class** in Java that provides operations on double numbers for arithmetic, scale handling, rounding, comparison, hashing, and format conversion. It is commonly used for financial calculations. That is, `BigDecimal` is a good choice for representing **monetary** values in Java.
+
+<h2 id="2-bool">Boolean <a href="#top">&#128205;</a></h2>
+
+<h3 id="2-a">Return type <a href="#top">&#128205;</a></h3>
 
 :bulb: The result of a relational operator is one of two special values: `true` or `false`, which belongs to the data type `boolean`.
 
-> Declaration
-
-:bookmark_tabs: Check out the following code snippet
+<h3 id="2-b">Initialisation <a href="#top">&#128205;</a></h3>
 
 ```
 boolean isLegit = true;
@@ -86,11 +155,9 @@ boolean result = 2 < 3; // false. You can also do this, because the result of a 
 boolean result2 = (5 < 8 && 9 > 10 || 7 == 12); // EXAMPLE, it'll be false
 ```
 
-<h2 id="3-elif">III. if-else</h2>
+<h2 id="3-elif">if-else <a href="#top">&#128205;</a></h2>
 
-> Syntax (In Good Practice)
-
-:bookmark_tabs: Check out the following code snippet
+<h3 id="3-a">Syntax (In Good Practice) <a href="#top">&#128205;</a></h3>
 
 ```
 if (condition1) {
@@ -104,9 +171,7 @@ if (condition1) {
 
 `if-else` syntax in Java is pretty similar to other languages like C/C++, C# etc.
 
-> Common Logical Issue
-
-:bookmark_tabs: Check out the following code snippet
+<h3 id="3-b">Common Logical Issue <a href="#top">&#128205;</a></h3>
 
 ```
 String food1 = "Ramen";
@@ -163,7 +228,7 @@ if (!LNS) { // !false = true, which means it will be always true as long as the 
 
 :bulb: With this solution, all conditions will be checked. You might notice the `!LNS`. The `if-else` parentheses inside must be a condition and the results is either false or true. `LNS = false` is declared as default, by using `!LNS` can satisfy the first `if` and continue to do other operations.
 
-> Short Hand Form
+<h3 id="3-c">Short Hand Form <a href="#top">&#128205;</a></h3>
 
 :grey_exclamation: Before explaning that, I personally not recommend this to programming beginners. So write `if-else` in a normal form for now and if there's one day that you think you are familiar with coding it, you could start getting used to the short hand form.
 
@@ -197,13 +262,9 @@ if (today.equals("Monday")) {
 }
 ```
 
-Looks the same right.
+<h2 id="4-switch">Switch <a href="#top">&#128205;</a></h2>
 
-<h2 id="4-switch">IV. Switch</h2>
-
-> Syntax (In Good Practice)
-
-:bookmark_tabs: Check out the following code snippet
+<h3 id="4-a">Syntax (In Good Practice) <a href="#top">&#128205;</a></h3>
 
 ```
 switch (number) {
@@ -236,7 +297,7 @@ if (number == 1) {
 }
 ```
 
-> multiple cases
+<h3 id="4-b">Multiple Conditions <a href="#top">&#128205;</a></h3>
 
 ```
 ...
@@ -265,12 +326,8 @@ if (food.equals("dango") || food.equals("ramen") || food.equals("Tempura")) {
 }
 ```
 
-<h2 id="5-qa">V. Q & A</h2>
+<h2 id="5-qa">Q & A <a href="#top">&#128205;</a></h2>
 
 Q1: ?
 
 A1: !
-
-Add more if you may have
-
-

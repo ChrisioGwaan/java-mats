@@ -22,7 +22,8 @@ class FoodMain {
 
         /*
          * The following commented code is not necessary
-         * because we can try to avoid duplicated code here (code only inside the while loop)
+         * because we can try to avoid duplicated code here (code only inside the while
+         * loop)
          * by setting variable inputStopBool into true
          * which also means the program will always enter the first while loop
          */
@@ -83,9 +84,9 @@ class FoodMain {
 
     public static boolean isTextYes(String userInput) {
         if (userInput.equals("Yes") || userInput.equals("YES") ||
-            userInput.equals("y") || userInput.equals("Y") ||
-            userInput.equals("yes")) {
-            
+                userInput.equals("y") || userInput.equals("Y") ||
+                userInput.equals("yes")) {
+
             return true;
         }
 
