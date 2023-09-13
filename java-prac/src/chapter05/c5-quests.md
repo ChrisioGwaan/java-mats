@@ -1,4 +1,4 @@
-1. `prac1.java`
+## `c5_p1.java`
 
 Write a program that takes 10 integer values as input, then store those integers into an array. After that, write an algorithm to retreive a min and max value of the array, print them out in the end.
 
@@ -8,7 +8,7 @@ Constrains:
   
 - [ ] Finish?
 
-2. `prac2.java`
+## `c5_p2.java`
 
 Write a program that takes an integer, check whether the integer number is a **prime** number or not, and returns a message of `true` or `false`.
 
@@ -16,7 +16,7 @@ Reference: [κόσκινον Ἐρατοσθένους, kóskinon Eratosthénous
 
 - [ ] Finish?
 
-3. `prac3.java`
+## `c5_p3.java`
 
 **Step 1:**
 
