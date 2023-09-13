@@ -133,7 +133,7 @@ String name = "dango" // EXAMPLE
 |-----------|----------------|------------------------------|
 | `%7s`     | ` dango` | 7 spaces in the String, will leave spaces at front if possible |
 | `%-7s`    | `dango ` | 7 spaces in the String, will leave spaces at end if possible  |
-| `%-7S`    | ` DANGO` | `S` will uppercase `dango` |
+| `%-7S`    | `DANGO ` | `S` will uppercase `dango` |
 
 As you may notice that some specifiers work in all data types, for instance, `%2d`, `%2f`, `%2s`, even `%-2d`.
 
@@ -269,6 +269,7 @@ import java.lang.Math;
 
 <h3 id="4-b">Commonly Used Methods <a href="#top">&#128205;</a></h3>
 
+* `Math.log()`, natural logarithm
 * `Math.sqrt()`, square root
 * `Math.sin()`, sine
 * `Math.cos()`, cosine
