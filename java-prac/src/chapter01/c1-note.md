@@ -92,7 +92,7 @@ System.err.println("404 NOT FOUND"); // Just an example
 | `%s`        | String        |
 | `%c`        | char          |
 | `%f`        | float, double         |
-| `%e`        | Exponential, scientific notation, float or double |
+| `%e`        | Scientific notation, float or double |
 | `%o`        | Octal number  |
 | `%x`        | Hexadecimal number |
 | `%%`        | Preserve percentage sign |
