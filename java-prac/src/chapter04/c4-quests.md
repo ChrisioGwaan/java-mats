@@ -1,4 +1,4 @@
-1. `prac1.java`
+## `c4_p1.java`
 
 Let’s say you are given a number, $a$, and you want to find its square root. One way to do that is to start with a rough guess about the answer, $x_{0}$ , and then improve the guess by using this formula:
 
@@ -12,7 +12,7 @@ As your initial guess, you should use $\frac{a}{2}$. Your method should iterate 
 
 - [ ] Finish?
 
-2. `prac2.java`
+## `c4_p2.java`
 
 One way to evaluate $exp(−x^{2})$ is to use the infinite series expansion:
 
@@ -22,7 +22,7 @@ The $i$th term in this series is $\frac{ (-1)^{i}x^{2i} }{i!}$. Write a program 
 
 - [ ] Finish?
 
-3. `prac3.java`
+## `c4_p3.java`
 
 A word is said to be “abecedarian” if the letters in the word appear in alphabetical order. For example, the following are all six-letter English abecedarian words:
 
