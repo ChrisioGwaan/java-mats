@@ -1,4 +1,4 @@
-1. `Food.java`, `FoodMain.java`
+## `Food.java`, `FoodMain.java`
 
 * Follow the `TODO` instructions in both files
 * `double` variable - 2 decimal places
