@@ -21,10 +21,14 @@
     * [length()](#2-cf)
     * [replace()](#2-cg)
     * [+= operator](#2-ch)
-* [Double](#3-double)
-  * [Division by Zero](#3-a)
-  * [Formatted Output](#3-b)
-* [Q & A](#4-qa)
+* [Integer](#3-int)
+  * [Readable Syntax](#3-a)
+* [Double](#-4double)
+  * [Division by Zero](#4-a)
+  * [Formatted Output](#4-b)
+* [Q & A](#5-qa)
+
+Numbers, Strings, and other values are called ***literals***.
 
 <h2 id="1-Char">Char <a href="#top">&#128205;</a></h2>
 
@@ -156,7 +160,8 @@ String word = "Hello";
 
 <h3 id="2-a">Basic <a href="#top">&#128205;</a></h3>
 
-* A **String literal** is surrounded with double quotes.
+* A **String literal** is *surrounded with double quotes*.
+* A **string** is a *sequence of individual characters*.
 
 <h3 id="2-b">String Input <a href="#top">&#128205;</a></h3>
 
@@ -319,20 +324,26 @@ String str1 = "Hello";
 str1 += "!!!"; // Hello!!!
 ```
 
-<h2 id="3-double">Double <a href="#top">&#128205;</a></h2>
+<h2 id="3-int">Integer <a href="#top">&#128205;</a></h2>
 
-<h3 id="3-a">Division by Zero <a href="#top">&#128205;</a></h3>
+<h3 id="3-a">Readable Syntax <a href="#top">&#128205;</a></h3>
+
+If an integer value contains multiple digits, undercores can be added to divide the digit into blocks for more readability, such as `1_000_000_000`.
+
+<h2 id="4-double">Double <a href="#top">&#128205;</a></h2>
+
+<h3 id="4-a">Division by Zero <a href="#top">&#128205;</a></h3>
 
 In mathematics, the **division by zero** can be expressed as $\frac{a}{b}$, where $b = 0$. The expression has no meaning and it is also considered as undefined. In **Java**, the program will print a floating-point number `NaN` (Not a Number).
 
-<h3 id="3-b">Formatted Output <a href="#top">&#128205;</a></h3>
+<h3 id="4-b">Formatted Output <a href="#top">&#128205;</a></h3>
 
 ```
 double pi = 3.14159265358979323846;
 System.out.printf("pi = %.2f\n", pi); // pi = 3.14 (with a new line)
 ```
 
-<h2 id="4-qa">Q & A <a href="#top">&#128205;</a></h2>
+<h2 id="5-qa">Q & A <a href="#top">&#128205;</a></h2>
 
 Q1: `String quote_split1 = quote.substring(26);` what does the 26 represent? Confused with no `endIndex` there.
 

@@ -1,10 +1,10 @@
-1. `prac1.java`
+## `c3_p1.java`
 
 Rewrite the code by using a single if statement.
 
 - [ ] Finish?
 
-2. `prac2.java`
+## `c3_p2.java`
 
 Fermat’s Last Theorem says that there are no integers `a`, `b`, `c`, and `n` such that
 
@@ -20,7 +20,7 @@ $$a^{n} + b^{n} = c^{n}$$
 
 - [ ] Finish?
 
-3. `prac3.java`
+## `c3_p3.java`
 
 Write a program that finds the roots of  
 

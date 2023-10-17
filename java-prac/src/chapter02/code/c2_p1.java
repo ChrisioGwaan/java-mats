@@ -13,7 +13,7 @@ package chapter02.code;
  * Year: 1945
  */
 
-class c2_p1 {
+public class c2_p1 {
     public static void main(String[] args) {
 
         
