@@ -5,17 +5,18 @@
 * [Logics & Conditions](#1-lc)
   * [AND](#1-a)
   * [OR](#1-b)
-  * [Relational Operators](#1-c)
-  * [String Comparison](#1-d)
-    * [== operator](#1-da)
-    * [equals()](#1-db)
-    * [compareTo()](#1-de)
-    * [equalsIgnoreCase()](#1-df)
-    * [compareToIgnoreCase()](#1-dg)
-  * [Short-circuit Evaluation](#1-e)
-  * [Floating-point Numbers Comparison](#1-f)
-    * [Issue with == operator](#1-fa)
-    * [BigDecimal](#1-fb)
+  * [XOR](#1-c)
+  * [Relational Operators](#1-d)
+  * [String Comparison](#1-e)
+    * [== operator](#1-ea)
+    * [equals()](#1-eb)
+    * [compareTo()](#1-ec)
+    * [equalsIgnoreCase()](#1-ed)
+    * [compareToIgnoreCase()](#1-ef)
+  * [Short-circuit Evaluation](#1-f)
+  * [Floating-point Numbers Comparison](#1-g)
+    * [Issue with == operator](#1-ga)
+    * [BigDecimal](#1-gb)
 * [Boolean](#2-bool)
   * [Return Type](#2-a)
   * [Initialisation](#2-b)
@@ -44,7 +45,18 @@
 | T   | T   | T   |
 | F   | T   | F   |
 
-<h3 id="1-c">Relational Operators <a href="#top">&#128205;</a></h3>
+<h3 id="1-c">XOR <code>||</code> <a href="#top">&#128205;</a></h3>
+
+**XOR** ( `^` in Java Syntax) means exclusive or, it takes two boolean operands and returns true if, and only if, the operands are different.
+
+| A   | B   | A XOR B   |
+| --- | --- | --- |
+| T   | T   | F   |
+| F   | T   | T   |
+| T   | F   | T   |
+| F   | F   | F   |
+
+<h3 id="1-d">Relational Operators <a href="#top">&#128205;</a></h3>
 
 **(for integers or floating-point values, only comparing the values)**
 
@@ -57,9 +69,9 @@
 * `==`, equal to
 * `!=`, not equal to
 
-<h3 id="1-d">String Comparison <a href="#top">&#128205;</a></h3>
+<h3 id="1-e">String Comparison <a href="#top">&#128205;</a></h3>
 
-<h4 id="1-da"><code>==</code> operator <a href="#top">&#128205;</a></h4>
+<h4 id="1-ea"><code>==</code> operator <a href="#top">&#128205;</a></h4>
 
 :bulb: **AKA reference comparison**
 
@@ -77,11 +89,11 @@ String new_str1 = new String("Late Night Snacks");
 
 :bulb: **In general, it compares the memory addresses of the string objects rather than their actual content.**
 
-<h4 id="1-db"><code>equals()</code> <a href="#top">&#128205;</a></h4>
+<h4 id="1-eb"><code>equals()</code> <a href="#top">&#128205;</a></h4>
 
 `str1.equals(new_str1)` means that the actual contents of `str1` and `new_str1` are now comparing, which will return **true**.
 
-<h4 id="1-de"><code>compareTo()</code> <a href="#top">&#128205;</a></h4>
+<h4 id="1-ec"><code>compareTo()</code> <a href="#top">&#128205;</a></h4>
 
 Suppose we have four Strings as follows. Remember that `compareTo()` is case sensitive.
 
@@ -96,15 +108,15 @@ System.out.println(str1.compareTo(str3)); // 0
 System.out.println(str1.compareTo(str4)); // -2, str1 has 2 less characters than str4
 ```
 
-<h4 id="1-df"><code>equalsIgnoreCase()</code> <a href="#top">&#128205;</a></h4>
+<h4 id="1-ed"><code>equalsIgnoreCase()</code> <a href="#top">&#128205;</a></h4>
 
 Two strings are considered equal ignoring case if they are of the same length and corresponding characters in the two strings are equal ignoring case.
 
-<h4 id="1-dg"><code>compareToIgnoreCase()</code> <a href="#top">&#128205;</a></h4>
+<h4 id="1-ef"><code>compareToIgnoreCase()</code> <a href="#top">&#128205;</a></h4>
 
 Same as `compareTo()`, but it ignores case.
 
-<h3 id="1-e">Short-circuit Evaluation <a href="#top">&#128205;</a></h3>
+<h3 id="1-f">Short-circuit Evaluation <a href="#top">&#128205;</a></h3>
 
 :bulb: **Short-circuit evaluation** is the process of evaluating the second argument only when needed.
 
@@ -119,9 +131,9 @@ if (x > 0 && y > 0) {
 * If `x > 0` is false, then `y > 0` will not be evaluated, because the result of `false && y > 0` will always be false.
 * If `x > 0` is true, then `y > 0` will be evaluated, because the result of `true && y > 0` depends on the value of `y`.
 
-<h3 id="1-f">Floating-point Numbers Comparison <a href="#top">&#128205;</a></h3>
+<h3 id="1-g">Floating-point Numbers Comparison <a href="#top">&#128205;</a></h3>
 
-<h4 id="1-fa">Issue with <code>==</code> operator <a href="#top">&#128205;</a></h4>
+<h4 id="1-ga">Issue with <code>==</code> operator <a href="#top">&#128205;</a></h4>
 
 It is **NOT** recommended to use `==` operator to compare floating-point numbers, because the result might be unexpected. Floating-point numbers should be compared for a **close enough** value, like `Math.abs(a - b) < 1e-10` as an example. **Epislon** is to avoid the issue of floating-point numbers and it is expected to be a very small number. (Commonly $0.0001$)
 
@@ -134,7 +146,7 @@ System.out.println("The value of a is " + a);
 System.out.println("The actual floating value of a is " + new.BigDecimal(a));
 ```
 
-<h4 id="1-fb"><code>BigDecimal</code> <a href="#top">&#128205;</a></h4>
+<h4 id="1-gb"><code>BigDecimal</code> <a href="#top">&#128205;</a></h4>
 
 `BigDecimal` is a **class** in Java that provides operations on double numbers for arithmetic, scale handling, rounding, comparison, hashing, and format conversion. It is commonly used for financial calculations. That is, `BigDecimal` is a good choice for representing **monetary** values in Java.
 
