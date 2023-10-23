@@ -2,7 +2,7 @@
 
 :dango:
 
-* [Logics & Conditions](#1-lc)
+* [Logics & Conditions](#1-lc-)
   * [Logical Operators](#1-a)
     * [NOT](#1-aa)
     * [AND](#1-ab)
@@ -31,7 +31,7 @@
   * [Multiple Conditions](#4-b)
 * [Q & A](#5-qa)
 
-<h2 id="1-lc">Logics & Conditions <a href="#top">&#128205;</a></h2>
+<h2 id="1-lc-">Logics & Conditions <a href="#top">&#128205;</a></h2>
 
 <h3 id="1-a">Logical Operators <a href="#top">&#128205;</a></h3>
 
