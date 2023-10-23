@@ -3,9 +3,11 @@
 :dango:
 
 * [Logics & Conditions](#1-lc)
-  * [AND](#1-a)
-  * [OR](#1-b)
-  * [XOR](#1-c)
+  * [Logical Operators](#1-a)
+    * [NOT](#1-aa)
+    * [AND](#1-ab)
+    * [OR](#1-ac)  
+    * [XOR](#1-ad)
   * [Relational Operators](#1-d)
   * [String Comparison](#1-e)
     * [== operator](#1-ea)
@@ -31,23 +33,50 @@
 
 <h2 id="1-lc">Logics & Conditions <a href="#top">&#128205;</a></h2>
 
-<h3 id="1-a">AND <code>&&</code> <a href="#top">&#128205;</a></h3>
+<h3 id="1-a">Logical Operators <a href="#top">&#128205;</a></h3>
 
-|     | T   | F   |
+<h4 id="1-aa">NOT <code>!</code> <a href="#top">&#128205;</a></h4>
+
+This operator negates a Boolean value, changing **True** to **False** and **False** to **True**.
+
+```
+boolean a = !((1 + 1) == 2);
+                // a will be false.
+```
+
+<h4 id="1-ab">AND <code>&&</code> <a href="#top">&#128205;</a></h4>
+
+|     | **T**   | **T**   |
 | --- | --- | --- |
-| T   | T   | F   |
-| F   | F   | F   |
+| **T**   | T   | F   |
+| **T**   | F   | F   |
 
-<h3 id="1-b">OR <code>||</code> <a href="#top">&#128205;</a></h3>
+```
+// Suppose a = 0, b = 5, c = 10, d = 15
 
-|     | T   | F   |
+boolean result = ((!(a > b)) && ((c + b + a) == 15));
+                // result will be false.
+```
+
+<h4 id="1-ac">OR <code>||</code> <a href="#top">&#128205;</a></h4>
+
+|     | **T**   | **F**   |
 | --- | --- | --- |
-| T   | T   | T   |
-| F   | T   | F   |
+| **T**   | T   | T   |
+| **F**   | T   | F   |
 
-<h3 id="1-c">XOR <code>||</code> <a href="#top">&#128205;</a></h3>
+```
+// Suppose a = 0, b = 5, c = 10, d = 15
 
-**XOR** ( `^` in Java Syntax) means exclusive or, it takes two boolean operands and returns true if, and only if, the operands are different.
+boolean result = ((!(a > b)) && ((c + b + a) == 15)) || (d % 10 != 5);
+                // result will be true.
+```
+
+<h4 id="1-ad">XOR <code>^</code> <a href="#top">&#128205;</a></h4>
+
+**XOR** ( `^` in Java Syntax) means **exclusive or**, it takes two boolean operands and returns true if, and only if, the operands are different.
+
+That is, whether you're right or I am right, there's no such a place for both of us that are right.
 
 | A   | B   | A XOR B   |
 | --- | --- | --- |
@@ -55,6 +84,13 @@
 | F   | T   | T   |
 | T   | F   | T   |
 | F   | F   | F   |
+
+```
+// Suppose a = 0, b = 5, c = 10, d = 15
+
+boolean result = ((!(a > b)) && ((c + b + a) == d)) || (d % c != b) ^ (c % c == a);
+                // result will be true. OR operator has the highest precedence.
+```
 
 <h3 id="1-d">Relational Operators <a href="#top">&#128205;</a></h3>
 
@@ -275,6 +311,11 @@ if (today.equals("Monday")) {
 ```
 
 <h2 id="4-switch">Switch <a href="#top">&#128205;</a></h2>
+
+- [x] Switch statements can only test for **equality**
+- [x] It is possible to write **nested** switch statements
+- [x] The default case is **optional** in switch statement, in Java.
+- [x] In a switch statement, each case label must have a **unique** constant value.
 
 <h3 id="4-a">Syntax (In Good Practice) <a href="#top">&#128205;</a></h3>
 
